@@ -1,0 +1,88 @@
+/* --- BEGIN HEADER --- */
+
+.header {
+    padding: 10px 0px;
+    width: 100%;
+    background: $bleu;
+}
+
+.header_logo {
+    width: 124px;
+    height: 23px;
+    display: flex;
+    align-items: center;
+}
+
+/* Menu */
+
+.main-menu {
+    padding:0;
+    margin:0;
+    list-style: none;
+    background: $bleu;
+        & > a:after { 
+            ontent: '+'; 
+        }
+        & > a:only-child:after { 
+            content: ''; 
+        }
+        &_item {
+            position: relative; 
+            display: inline-block;
+            margin-right: -4px;
+            width: auto;
+            padding: 38px 21px;
+            text-align: center;
+            }
+            & a {
+                display: block;
+                margin-right: -4px;
+                font-size: .8em;
+                background: $bleu;
+                text-decoration: none;
+                color: #fff;
+                text-transform: uppercase;
+                border-bottom: 0;
+            }
+            &:hover {
+                display: block;
+            }
+        &_sub {
+            z-index: 20;
+            position: absolute; 
+            top: 115%;
+            left: 0;
+            width: 100%;
+            padding: 10px;
+            list-style: none;
+            background: $bleu;
+            &-item {
+                height: 100%;
+                display: inline-block;
+                padding: 10px;
+            }
+        }
+}
+
+@media screen and (max-width: 1200px) {
+    .main-menu li {
+        /* пункты меню расположены вертикально */
+        /* каждый имеет ширину 100% */
+        font-size: 1em;
+        display: none;
+        width: 100%;
+    }
+    .main-menu a {
+        /* стили ссылки */
+        display: block;
+        border-bottom: 1px solid $white;
+        color: $white;
+        padding: 1em;
+        text-decoration: none;
+    }
+    .main-menu a:hover {
+        text-decoration: none;
+    }   
+}
+
+/* --- END HEADER --- */

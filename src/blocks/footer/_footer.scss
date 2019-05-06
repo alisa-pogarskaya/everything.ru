@@ -1,0 +1,40 @@
+.footer {
+	
+	margin-top: 150px;
+	padding: 20px;
+	background: $gray-black;
+	min-height: 60px;
+	&_list {
+		list-style: none;
+	}
+	&_list-item {
+		display: inline-block;
+	}
+	&_list-item a {
+		text-decoration: none;
+		margin-right: 40px;
+		color: $gray;
+		font-size: 13px;
+		line-height: 18px;
+		cursor: pointer;
+		transition: all 0.3s linear;
+	}
+	&_list-item a:hover {
+		color: $white;
+	}
+	&_copyright {
+		font-size: 13px;
+		line-height: 18px;
+		color: $gray;
+	}	
+}
+
+@media screen and (max-width: 768px) {
+	.footer {
+	margin-top: 80px;
+	padding: 20px;
+		&_list-item {
+		
+		}
+	}
+}

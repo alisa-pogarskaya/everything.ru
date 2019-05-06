@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>gulp-scss-starter</title>
+		<meta name="theme-color" content="#c9e0e04d">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<link rel="shortcut icon" href="./img/favicons/favicon.ico" type="image/x-icon">
+		<link rel="apple-touch-icon" href="./img/favicons/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="57x57" href="./img/favicons/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="./img/favicons/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="./img/favicons/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="./img/favicons/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="./img/favicons/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="./img/favicons/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon-180x180.png">
+		<link rel="stylesheet" href="./styles/main.css?v=0.0.0">
+		<!-- Use these stylesheets for icons and typography in head of your HTML doc if you want :) -->
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	</head>
+	<body>
+		<header class="header">
+			<!-- шапка -->
+			
+		  	<div class="container-fluid">
+				<div class="row middle-xs">
+			  		<div class="col-xs-2">
+						<img src="../img/logo/LogoType.svg" alt="logo" class="header_logo">
+			  		</div>
+			  		<div class="col-xs-9">
+			  			<!-- навигация -->
+						<nav>
+						  	<ul class="main-menu">
+								<li class="main-menu_item">
+									<a href="#">Hi-Tech</a>
+								</li>
+								<li class="main-menu_item">
+									<a href="#">Дом</a>
+								</li>
+								<li class="main-menu_item">
+									<a href="#">Здоровье</a>
+								</li>
+								<li class="main-menu_item">
+									<a href="#">Компьютеры</a>
+								</li>
+								<li class="main-menu_item">
+									<a href="#">Туризм</a>
+								</li>
+								<li class="main-menu_item">
+									<a href="#">Строительство</a>
+								</li>
+								<li class="main-menu_item">
+									<a href="#">Сравнения</a>
+								</li>
+								<li class="main-menu_item">
+									<a href="#"> Все категории</a>
+									<ul class="main-menu_sub">
+										<li class="main-menu_sub-item">
+											<a href="#">Категория 1</a>
+										</li>
+										<li class="main-menu_sub-item">
+											<a href="#">Категория 2</a>
+										</li>
+										<li class="main-menu_sub-item">
+											<a href="#">Категория 3</a>
+										</li>
+									</ul>
+								</li>
+						 	</ul>
+						</nav>
+			  		</div>
+			  		<div class="col-xs end-xs">
+						<img src="../img/icons/Search.svg" alt="search" width="16px" height="16px">
+			  		</div>
+			</div>
+		  </div>
+		</header>
+		<main class="container-fluid main">
+			<section class="section-block">
+				<div class="row">
+					<div class="col-xs">
+						<h1>Контакты</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs">
+					<h3>Адрес:</h3>
+					<p>
+						г. Санкт-Петербург, ул. Невская 125, офис 32.
+					</p>
+					<p>
+						С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации дальнейших направлений развития. Значимость этих проблем настолько очевидна, что рамки и место обучения кадров способствует подготовки и реализации направлений прогрессивного развития. Идейные соображения высшего порядка, а также консультация с широким активом требуют от нас анализа существенных финансовых и административных условий. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности требуют определения и уточнения направлений прогрессивного развития.
+					</p>
+					</div>
+					<div class="col-xs">
+						<h3>Форма обратной связи</h3>
+						<form id="application" action="application.php" method="POST" name="application">
+
+							<span>Имя</span>
+							<input name="name" id="zayavkaName" maxlength="20" placeholder="Введите ваше имя*" required />
+
+							<span>Email</span>
+							<input name="email" type="email" id="applicationEmail" maxlength="20" placeholder="Введите ваш E-mail*" required />
+
+							<span>Сообщение</span>
+							<textarea id="msg" class="txtarea" name="msg" placeholder="Ваше сообщение:"></textarea>
+							<div class="moreOption">
+							    <input class="adapt" type="checkbox" name="adapt[]" value="Нужна адаптивность"/>
+							    <span>Ознакомлен с политикой обработки персональных данных </span>
+							</div> 
+							<button class="applicationButton" type="submit" form="application">Отправить</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+		
+		<footer class="footer">
+			<div class="container">
+				<div class="row middle-xs">
+					<div class="col-11-xs">
+						<ul class="footer_list">
+							<li class="footer_list-item"><a href="/no-page.html">Политиика конфиденциальности</a></li>
+							<li class="footer_list-item"><a href="no-page.html">Пользовательское соглашение</a></li>
+							<li class="footer_list-item"><a href="no-page.html">Обработка данных</a></li>
+							<li class="footer_list-item"><a href="about.html">О журнале</a></li>
+							<li class="footer_list-item"><a href="contacts.html">Контакты</a></li>
+						</ul>
+					</div>
+					<div class="col-xs end-xs">
+						<p class="footer_copyright">© 2019 Все права защищены.</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="./js/main.js" defer></script>
+	</body>
+</html>

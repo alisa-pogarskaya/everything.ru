@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>gulp-scss-starter</title>
+		//= includes/head.html
+	</head>
+	<body>
+		//= ../blocks/header/header.html
+		<main class="container-fluid main">
+			<section class="section-block">
+				<div class="row">
+					<div class="col-xs">
+						<h1>Контакты</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs">
+					<h3>Адрес:</h3>
+					<p>
+						г. Санкт-Петербург, ул. Невская 125, офис 32.
+					</p>
+					<p>
+						С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации дальнейших направлений развития. Значимость этих проблем настолько очевидна, что рамки и место обучения кадров способствует подготовки и реализации направлений прогрессивного развития. Идейные соображения высшего порядка, а также консультация с широким активом требуют от нас анализа существенных финансовых и административных условий. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности требуют определения и уточнения направлений прогрессивного развития.
+					</p>
+					</div>
+					<div class="col-xs">
+						<h3>Форма обратной связи</h3>
+						<form id="application" action="application.php" method="POST" name="application">
+
+							<span>Имя</span>
+							<input name="name" id="zayavkaName" maxlength="20" placeholder="Введите ваше имя*" required />
+
+							<span>Email</span>
+							<input name="email" type="email" id="applicationEmail" maxlength="20" placeholder="Введите ваш E-mail*" required />
+
+							<span>Сообщение</span>
+							<textarea id="msg" class="txtarea" name="msg" placeholder="Ваше сообщение:"></textarea>
+							<div class="moreOption">
+							    <input class="adapt" type="checkbox" name="adapt[]" value="Нужна адаптивность"/>
+							    <span>Ознакомлен с политикой обработки персональных данных </span>
+							</div> 
+							<button class="applicationButton" type="submit" form="application">Отправить</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+		//= ../blocks/main/main.html
+		//= ../blocks/footer/footer.html
+		//= includes/scripts.html
+	</body>
+</html>
