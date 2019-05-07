@@ -4,85 +4,48 @@
     padding: 10px 0px;
     width: 100%;
     background: $bleu;
-}
 
-.header_logo {
-    width: 124px;
-    height: 23px;
-    display: flex;
-    align-items: center;
-}
-
-/* Menu */
-
-.main-menu {
-    padding:0;
-    margin:0;
-    list-style: none;
-    background: $bleu;
-        & > a:after { 
-            ontent: '+'; 
+    .button-hamburger {
+        @media(min-width: map-get($grid-breakpoints, lg)) {
+            display: none;
         }
-        & > a:only-child:after { 
-            content: ''; 
-        }
-        &_item {
-            position: relative; 
-            display: inline-block;
-            margin-right: -4px;
-            width: auto;
-            padding: 38px 21px;
-            text-align: center;
-            }
-            & a {
-                display: block;
-                margin-right: -4px;
-                font-size: .8em;
-                background: $bleu;
-                text-decoration: none;
-                color: #fff;
-                text-transform: uppercase;
-                border-bottom: 0;
-            }
-            &:hover {
-                display: block;
-            }
-        &_sub {
-            z-index: 20;
-            position: absolute; 
-            top: 115%;
-            left: 0;
-            width: 100%;
-            padding: 10px;
-            list-style: none;
-            background: $bleu;
-            &-item {
-                height: 100%;
-                display: inline-block;
-                padding: 10px;
-            }
-        }
-}
+    }
+    
+    &_logo {
+        width: 124px;
+        height: 23px;
+        display: flex;
+        align-items: center;
+    }
 
-@media screen and (max-width: 1200px) {
-    .main-menu li {
-        /* пункты меню расположены вертикально */
-        /* каждый имеет ширину 100% */
-        font-size: 1em;
+    &_search {
+        border: none;
+        padding: 5px;
+        background-color: transparent;
+        cursor: pointer;
+        outline: none;
+        font-size: 0;
+        vertical-align: middle;
+    }
+
+    &_search-form {
         display: none;
-        width: 100%;
+        margin-top: 5px;
+
+        input {
+            width: 100%;
+            font-family: inherit;
+            font-size: inherit;
+            height: 36px;
+            border: none;
+            box-shadow: 0 3px 8px 1px rgba(0, 0, 0, 0.2);
+            padding: 0 15px;
+
+            @include placeholder {
+                opacity: .5;
+            }
+        }
     }
-    .main-menu a {
-        /* стили ссылки */
-        display: block;
-        border-bottom: 1px solid $white;
-        color: $white;
-        padding: 1em;
-        text-decoration: none;
-    }
-    .main-menu a:hover {
-        text-decoration: none;
-    }   
 }
 
 /* --- END HEADER --- */

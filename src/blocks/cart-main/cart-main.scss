@@ -1,9 +1,7 @@
 .cart-main {
 	position: relative;
 	z-index: 1;
-	width: 200px;
 	min-height: 415px;
-	margin: 0px 0px 20px 0px;
 	background: $white;
 	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
 	border-radius: 12px;
@@ -22,11 +20,11 @@
 		object-fit: cover;
 	}
 	&_block-info {
-		padding: 20px 20px 0px 20px;
+		padding: 20px;
 	}
 	&_info {
 		color: $gray-1;
-		margin: 10px 0px;
+		margin-top: 10px;
 		& span {
 			display: inline-block;
 			font-family: Ubuntu;
@@ -36,7 +34,6 @@
 			line-height: 14px;
 		}
 		& img {
-			display: inline;
 			width: 24px;
 			margin-bottom: -8px;
 		}
@@ -56,7 +53,8 @@
 .cart-main-decor {
 	z-index: 1;
 	position: relative;
-		&:hover:after {
+	display: block;
+	&:hover:after {
 		content: '';
 		position: absolute;
 		z-index: 2;
@@ -82,6 +80,7 @@
 		border: 5px solid $white;
 		border-radius: 100px;
 		box-shadow: 0px 1px 5px rgba(14, 14, 14, 0.1);
+		box-sizing: content-box;
 		& img {
 			width: 10px;
 			height: 10px;
@@ -91,18 +90,17 @@
 	&_block-text {
 		position: absolute;
 		z-index: 1;
-		top: 0;
-		right: 0;
-		height: 25px;
-		padding: 5px 10px 3px 10px;
+		top: 8px;
+		right: 8px;
+		padding: 0 5px;
 		border-radius: 10px;
 		background: $pink;
 		color: $white;
 		font-family: Ubuntu;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 18px;
-		line-height: 21px;/* identical to box height */
+		font-size: 10px;
+		line-height: 16.5px;/* identical to box height */
 		text-align: center;
 		background: linear-gradient(270deg, #FFA50E -22.83%, #F65335 65.12%);
 		box-shadow: inset 0px 1px 4px rgba(213, 52, 26, 0.2);
@@ -112,10 +110,9 @@
 
 @media only screen and (max-width: 1000px) {
 	.cart-main {
-		max-width: 70%;
 		min-height: auto;
 		&_block-info {
-		padding: 15px 15px 5px 15px;
+		padding: 15px;
 		}
 	}
 	.cart-main-decor_block-text {

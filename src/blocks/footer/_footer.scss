@@ -1,9 +1,12 @@
 .footer {
-	
 	margin-top: 150px;
 	padding: 20px;
 	background: $gray-black;
 	min-height: 60px;
+	& > div {
+		margin: 0 auto;
+		max-width: 1180px;
+	}
 	&_list {
 		list-style: none;
 	}
@@ -33,8 +36,5 @@
 	.footer {
 	margin-top: 80px;
 	padding: 20px;
-		&_list-item {
-		
-		}
 	}
 }

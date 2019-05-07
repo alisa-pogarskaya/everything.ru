@@ -8,59 +8,60 @@
 	</head>
 	<body>
 		//= ../blocks/header/header.html
-		<main class="container-fluid main">
+		<main class="container main">
 			<section class="section-block">
 				<div class="row">
 					<div class="col-lg-8">
 						//= ../blocks/cart-image/cart-image.html
 					</div>
 					<div class="col-lg-4">
-						<div class="container">
-							<div class="row column">
-								<div class="col-lg">
-									//= ../blocks/cart-image-mini/cart-image-mini.html
-								</div>
-								<div class="col-lg">
-									//= ../blocks/cart-image-mini/cart-image-mini.html
-								</div>
+						<div class="row column">
+							<div class="col">
+								//= ../blocks/cart-image-mini/cart-image-mini.html
 							</div>
 						</div>
-
+						<div class="row column">
+							<div class="col">
+								//= ../blocks/cart-image-mini/cart-image-mini.html
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
-			<div class="main-mini">
-				<section>
-					<div class="row">
-						<div class="col-lg">
-						<h2>Самые популярные категории</h2>
-						<p class="subtitle">Ознакомтесь с нашими популярными категориями</p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-lg">
-							//= ../blocks/cart-main/cart-main.html
-						</div>
-						<div class="col-lg">
-							//= ../blocks/cart-main/cart-main.html
-						</div>
-						<div class="col-lg">
-							//= ../blocks/cart-main/cart-main.html
-						</div>
-						<div class="col-lg">
-							//= ../blocks/cart-main/cart-main.html
-						</div>
-					</div>
-				</section>
+			<div class="row justify-content-center">
+				<div class="col-lg-10">
 					<section>
-					<h2>Новинки</h2>
-					<p class="subtitle">Ознакомтесь с нашими новинками</p>
-				</section>
-				</section>
+						<div class="row">
+							<div class="col">
+								<h2>Самые популярные категории</h2>
+								<p class="subtitle">Ознакомтесь с нашими популярными категориями</p>
+							</div>
+						</div>
+						<div class="row justify-content-center">
+							<div class="col-8 col-sm-10 col-lg-12">
+								//= ../blocks/cart-grid/cart-grid.html
+							</div>
+						</div>
+					</section>
 					<section>
-					<h2>Популярное</h2>
-					<p class="subtitle">Ознакомтесь с самыми читаемыми статьями</p>
-				</section>
+						<div class="row">
+							<div class="col">
+								<h2>Новинки</h2>
+								<p class="subtitle">Ознакомтесь с нашими новинками</p>
+							</div>
+						</div>
+						<div class="row justify-content-center">
+							<div class="col-8 col-sm-10 col-lg-12">
+								//= ../blocks/cart-carousel/cart-carousel.html
+							</div>
+						</div>
+					</section>
+					</section>
+						<section>
+						<h2>Популярное</h2>
+						<p class="subtitle">Ознакомтесь с самыми читаемыми статьями</p>
+					</section>
+				</div>
 			</div>
 		</main>
 		//= ../blocks/main/main.html
