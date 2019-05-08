@@ -24,10 +24,10 @@ $gutter: 23px;
         flex: 0 0 100%;
         max-width: 100%;
         margin-bottom: $grid-gutter-width;
+        padding-left: $grid-gutter-width / 2;
+        padding-right: $grid-gutter-width / 2;
 
         @media screen and (min-width: map-get($grid-breakpoints, sm)) {
-            padding-left: $grid-gutter-width / 2;
-            padding-right: $grid-gutter-width / 2;
             flex: 0 0 50%;
             max-width: 50%;
         }

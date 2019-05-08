@@ -20,10 +20,12 @@
         max-width: 100%;
 
         &.is-active > #{$menu}_sub {
-            visibility: visible;
-            opacity: 1;
-            transition: visibility 0.5s ease-in, opacity 0.5s ease-in, max-height 0.5s ease-in;
-            max-height: 500px;
+            @media(max-width: map-get($grid-breakpoints, lg)) {
+                visibility: visible;
+                opacity: 1;
+                transition: visibility 0.5s ease-in, opacity 0.5s ease-in, max-height 0.5s ease-in;
+                max-height: 500px;
+            }
         }
 
         &:hover > #{$menu}_sub {
@@ -153,13 +155,13 @@
             z-index: 10;
             text-align: right;
 
+            &.is-active {
+                transform: translate(-100%, 0);
+            }
+
             .button-hamburger {
                 display: initial;
             }
-        }
-
-        &.is-active {
-            transform: translate(-100%, 0);
         }
     }
 }
