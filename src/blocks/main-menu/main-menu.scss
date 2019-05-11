@@ -1,0 +1,167 @@
+.main-menu {
+    $menu: &;
+
+    padding:0;
+    margin:0;
+    list-style: none;
+
+    @media(min-width: map-get($grid-breakpoints, lg)) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: $bleu;
+    }
+
+    &_item {
+        position: relative; 
+        width: auto;
+        text-align: center;
+        flex: 1 0 auto;
+        max-width: 100%;
+
+        &.is-active > #{$menu}_sub {
+            @media(max-width: map-get($grid-breakpoints, lg)) {
+                visibility: visible;
+                opacity: 1;
+                transition: visibility 0.5s ease-in, opacity 0.5s ease-in, max-height 0.5s ease-in;
+                max-height: 500px;
+            }
+        }
+
+        &:hover > #{$menu}_sub {
+            @media(min-width: map-get($grid-breakpoints, lg)) {
+                visibility: visible;
+                opacity: 1;
+                transform: translate(-50%, 0);
+                margin-top: 5px;
+            }
+        }
+    }
+    a {
+        display: block;
+        font-size: .75em;
+        text-decoration: none;
+        color: $white;
+        text-transform: uppercase;
+        border-bottom: 0;
+        padding: 15px 0;
+
+        @media(min-width: map-get($grid-breakpoints, lg)) {
+            padding: 33px 0;
+        }
+
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            height: 15px;
+            width: 100%;
+        }
+
+        &.down {
+            &:after {
+                content: '\f078';
+                display: inline-block;
+                margin-left: 10px;
+                font-weight: 900;
+                font-family: "Font Awesome 5 Free";
+            }
+        }
+    }
+    &_sub {
+        visibility: hidden;
+        opacity: 0;
+        background-color: $bleu;
+        list-style-type: none;
+
+        @media(max-width: map-get($grid-breakpoints, lg)) {
+            overflow: hidden;
+            max-height: 0;
+            transition: visibility 0.5s ease-out, opacity 0.5s ease-out, max-height 0.5s ease-out;
+            background-color: rgba($white, .1);
+        }
+        @media(min-width: map-get($grid-breakpoints, lg)) {
+            position: absolute;
+            z-index: 20;
+            left: 50%;
+            top: 100%;
+            width: 150px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            box-shadow: 0 0 30px rgba(0,0,0,.2);
+            box-sizing: border-box;
+            transform: translate(-50%, 20px);
+            transition: .3s;
+
+            & #{$menu}_sub {
+                margin-top: 0;
+                top: 0;
+                transform: translate(0, 20px);
+
+                &-left {
+                    right: 100%;
+                    left: auto;
+                }
+
+                &-right {
+                    right: auto;
+                    left: 100%;
+                }
+            }
+        }
+        
+        & .main-menu_item {
+            width: 100%;
+            position: relative;
+
+            &:hover > #{$menu}_sub {
+                @media(min-width: map-get($grid-breakpoints, lg)) {
+                    transform: translate(0, 0);
+                    margin-top: 0;
+                }
+            }
+
+            a {
+                padding: 10px 20px;
+                &:hover {
+                    background-color: darken($bleu, 2%);
+                }
+            }
+        }
+    }
+
+    &_wrapper {
+        .button-hamburger {
+            display: none;
+        }
+
+        @media (max-width: map-get($grid-breakpoints, lg)) {
+            position: fixed;
+            top: 0;
+            background-color: #212121;
+            right: 0;
+            width: 250px;
+            height: calc(100% + 1px);
+            transform: translate(0, 0);
+            margin-right: -250px;
+            margin-top: -1px;
+            padding: 10px 0;
+            transition: transform 0.3s ease;
+            overflow: auto;
+            z-index: 10;
+            text-align: right;
+
+            &.is-active {
+                transform: translate(-100%, 0);
+            }
+
+            .button-hamburger {
+                display: initial;
+            }
+        }
+    }
+}

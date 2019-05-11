@@ -1,0 +1,93 @@
+.button-hamburger {
+    outline: none;
+    overflow: visible;
+    margin: 0;
+    padding: 6.5px 15px;
+    cursor: pointer;
+    color: inherit;
+    border: 0;
+    font-size: 0;
+    line-height: 0;
+    background-color: transparent;
+    vertical-align: middle;
+}
+
+.button-hamburger__wrap {
+    position: relative;
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+}
+
+@media (min-width: map-get($grid-breakpoints, md)) {
+    .button-hamburger__wrap {
+        width: 30px;
+        height: 23px;
+    }
+}
+
+.button-hamburger__inner {
+    top: 3px;
+    display: block;
+    position: absolute;
+    width: 21px;
+    height: 3px;
+    background-color: $white;
+    transition: -webkit-transform 0.2s ease;
+    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+    &:after, &:before {
+        position: absolute;
+        width: 21px;
+        height: 3px;
+        background-color: $white;
+        transition: -webkit-transform 0.2s ease;
+        transition: transform 0.2s ease;
+        transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+    }
+}
+
+.menu-open .button-hamburger__inner {
+    background-color: $white;
+    &:after, &:before {
+        background-color: $white;
+    }
+}
+
+@media (min-width: 768px) {
+    .button-hamburger__inner {
+        width: 30px;
+        height: 3px;
+        &:after, &:before {
+        width: 30px;
+        height: 3px;
+        }
+    }
+}
+
+.button-hamburger__inner {
+    &:before, &:after {
+        display: block;
+        content: "";
+    }
+    &:before {
+        top: 7px;
+    }
+    &:after {
+        top: 14px;
+    }
+}
+
+.button-hamburger.is-active .button-hamburger__inner {
+    -webkit-transform: translate(0, 8px) rotate(45deg);
+    transform: translate(0, 8px) rotate(45deg);
+    &:before {
+        -webkit-transform: rotate(-45deg) translate(-5.71429px, -7px);
+        transform: rotate(-45deg) translate(-5.71429px, -7px);
+        opacity: 0;
+    }
+    &:after {
+        -webkit-transform: translate(0, -14px) rotate(-90deg);
+        transform: translate(0, -14px) rotate(-90deg);
+    }
+}

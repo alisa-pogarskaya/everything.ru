@@ -1,0 +1,44 @@
+.slick-slide {
+    float: left;
+    outline: none;
+}
+.slick-list {
+    overflow: hidden;
+}
+.slick-slider {
+    position: relative;
+}
+.slick-arrow {
+    outline: none;
+    &.slick-disabled {
+        cursor: default;
+        outline: none;
+        opacity: .3;
+    }
+}
+.slide_prev,
+.slide_next {
+    background-color: $white;
+    border: none;
+    border-radius: 50%;
+    width: 54px;
+    height: 54px;
+    padding: 0;
+    cursor: pointer;
+
+    &.slick-disabled {
+        cursor: not-allowed;
+    }
+
+    .fas {
+        font-size: 1.125rem;
+    }
+
+    @media(max-width: map-get($grid-breakpoints, lg)) {
+        width: 36px;
+        height: 36px;
+    }
+}
+.slide_prev {
+    transform: rotate(180deg);
+}
