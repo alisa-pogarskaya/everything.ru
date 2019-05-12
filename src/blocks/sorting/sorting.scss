@@ -1,0 +1,41 @@
+/* BEGIN SORTING */
+.sorting-cont {
+    float: right;
+    border: 0 none; }
+
+.sorting-form {
+    width: 150px;
+    font-family: Montserrat, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    border: none;
+    background: #FFFFFF; }
+
+.select {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    &:after {
+    content: "";
+    padding: 0;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 1;
+    width: 6%;
+    height: 100%;
+    background: url(../img/navigation/Filtr.svg) no-repeat right #FFFFFF;
+    pointer-events: none;
+    box-sizing: border-box; }
+}
+
+select {
+    padding-right: 0px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    appearance: none; }
+
+/* END SORTING */
