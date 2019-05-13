@@ -92,3 +92,31 @@ img {
 .main {
 	height: 100%;
 }
+
+.text-col-2 {
+	margin: 20px 0px;
+	vertical-align: top;
+	width: 100%;
+	column-count: 2;
+	column-gap: 40px;
+}
+
+@media (max-width: 1200px) {
+	.text-col-2 {
+	column-count: 1;
+	}
+}
+
+.text-col-2 p {
+	margin: 0px;
+}
+
+.padding-left {
+	padding-left: 70px;
+}
+
+@media (max-width: 1200px) {
+	.padding-left {
+	padding-left: 0px;
+	}
+}

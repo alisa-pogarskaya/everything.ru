@@ -1,9 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
-    <title>Icons/24px/Back</title>
-    <desc>Created with Sketch.</desc>
-    <g id="Icons/24px/Back" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M3.81066017,12 L11.2803301,19.4696699 C11.5732233,19.7625631 11.5732233,20.2374369 11.2803301,20.5303301 C10.9874369,20.8232233 10.5125631,20.8232233 10.2196699,20.5303301 L2.21966991,12.5303301 C1.9267767,12.2374369 1.9267767,11.7625631 2.21966991,11.4696699 L10.2196699,3.46966991 C10.5125631,3.1767767 10.9874369,3.1767767 11.2803301,3.46966991 C11.5732233,3.76256313 11.5732233,4.23743687 11.2803301,4.53033009 L3.81066017,12 Z" id="Path" fill="#212121" fill-rule="nonzero"></path>
-    </g>
-</svg>
+<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Icons/24px/Back" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><path d="M3.81 12l7.47 7.47a.75.75 0 0 1-1.06 1.06l-8-8a.75.75 0 0 1 0-1.06l8-8a.75.75 0 0 1 1.06 1.06L3.81 12z" id="Path" fill="#212121" fill-rule="nonzero"/></g></svg>
