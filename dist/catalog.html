@@ -1,0 +1,1354 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>gulp-scss-starter</title>
+		<meta name="theme-color" content="#c9e0e04d">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<link rel="shortcut icon" href="./img/favicons/favicon.ico" type="image/x-icon">
+		<link rel="apple-touch-icon" href="./img/favicons/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="57x57" href="./img/favicons/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="./img/favicons/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="./img/favicons/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="./img/favicons/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="./img/favicons/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="./img/favicons/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon-180x180.png">
+		<link rel="stylesheet" href="./styles/main.css?v=0.0.0">
+		<!-- Use these stylesheets for icons and typography in head of your HTML doc if you want :) -->
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	</head>
+	<body>
+		<header class="header">
+			<!-- шапка -->
+		  	<div class="container">
+				<div class="row align-items-center">
+			  		<div class="col-5 col-md-3 col-lg-2">
+						<img src="../img/logo/LogoType.svg" alt="logo" class="header_logo">
+			  		</div>
+			  		<div class="col-1 col-lg-9">
+			  			<!-- BEGIN MAIN-MENU -->
+			  			
+			  			<nav class='main-menu_wrapper' id='navigation-menu'>
+			  			    <button class="button-hamburger" type="button" data-toggle="navigation-menu" aria-label="Меню">
+			  			        <span class="button-hamburger__wrap">
+			  			            <span class="button-hamburger__inner"></span>
+			  			        </span>
+			  			    </button>
+			  			    <ul class="main-menu">
+			  			        <li class="main-menu_item">
+			  			            <a href="#">Hi-Tech</a>
+			  			        </li>
+			  			        <li class="main-menu_item">
+			  			            <a href="#">Дом</a>
+			  			        </li>
+			  			        <li class="main-menu_item">
+			  			            <a href="#">Здоровье</a>
+			  			        </li>
+			  			        <li class="main-menu_item">
+			  			            <a href="#">Компьютеры</a>
+			  			        </li>
+			  			        <li class="main-menu_item">
+			  			            <a href="#">Туризм</a>
+			  			        </li>
+			  			        <li class="main-menu_item">
+			  			            <a href="#">Строительство</a>
+			  			        </li>
+			  			        <li class="main-menu_item">
+			  			            <a href="#">Сравнения</a>
+			  			        </li>
+			  			        <li class="main-menu_item">
+			  			            <a href="#" class="down">Все категории</a>
+			  			            <ul class="main-menu_sub">
+			  			                <li class="main-menu_item">
+			  			                    <a href="#">Категория 1</a>
+			  			                </li>
+			  			                <li class="main-menu_item">
+			  			                    <a href="#">Категория 2</a>
+			  			                </li>
+			  			                <li class="main-menu_item">
+			  			                    <a href="#">Категория 3</a>
+			  			                </li>
+			  			                <li class="main-menu_item">
+			  			                    <a class="down" href="#">Категории</a>
+			  			                    <ul class="main-menu_sub main-menu_sub-left">
+			  			                        <li class="main-menu_item"><a href="#">Категория 4</a></li>
+			  			                        <li class="main-menu_item"><a href="#">Категория 5</a></li>
+			  			                    </ul>
+			  			                </li>
+			  			            </ul>
+			  			        </li>
+			  			    </ul>
+			  			</nav>
+			  			
+			  			<!-- END MAIN-MENU -->
+					</div>
+			  		<div class="col text-right">
+						<button class="button-hamburger" type="button" data-toggle="navigation-menu" aria-label="Меню">
+						    <span class="button-hamburger__wrap">
+						        <span class="button-hamburger__inner"></span>
+						    </span>
+						</button>
+						<button type="button" class='header_search' data-header="search">
+							<img src="../img/icons/Search.svg" alt="search" width="16px" height="16px">
+						</button>
+			  		</div>
+				</div>
+				<!-- выдвижной поиск меню-->
+				<div class="header_search-form">
+					<form action="#" method="post">
+						<input type="search" placeholder="Найти">
+					</form>
+				</div>
+		  	</div>
+		</header>
+		<main class="container-fluid main">
+			<section class="section-block">
+				<div class="row">
+					<div class="col">
+						<h1>Контакты</h1>
+					</div>
+				</div>
+			</section>
+			<!-- BEGIN SORTING-->
+			    <div class="container">
+			        <div class="row justify-content-center">
+			            <div class="col-16">
+			                <fieldset class="sorting-cont styled-select">
+			                    <div class="select">
+			                        <select class="sorting-form" required>
+			                            <option value="">Новые рейтинги</option>
+			                            <option value="1">По популярности</option>
+			                            <option value="2">По просмотрам</option>
+			                            <option value="3">По количеству комментариев</option>
+			                        </select>
+			                    </div>
+			                </fieldset>
+			            </div>
+			        </div>
+			    </div>
+			<!-- END SORTING-->
+			<div class="container">
+            	<div class="row justify-content-center">
+                	<div class="col-md-4">
+                  		<!-- BEGIN MENU -->
+                  		<ul class="menu-sorting menu-sorting--margin">
+		                    <li class="menu-sorting__item menu-sorting__item-first">
+		                      <a class="menu-sorting__link menu-sorting__item-link" href="#">Все рубрики<span class="menu-sorting__icon"></span></a>
+		                    </li>
+		                    <li class="menu-sorting__item menu-sorting__item--active">
+		                      <a class="menu-sorting__link" href="#">Авто и мото</a>
+		                    </li>
+		                    <li class="menu-sorting__item">
+		                      <a class="menu-sorting__link" href="#">Бытовая техника</a>
+		                    </li>
+		                    <li class="menu-sorting__item">
+		                      <a class="menu-sorting__link" href="#">Дача, сад, огород</a>
+		                    </li>
+		                    <li class="menu-sorting__item">
+		                      <a class="menu-sorting__link" href="#">Детские товары</a>
+		                    </li>
+		                    <li class="menu-sorting__item">
+		                      <a class="menu-sorting__link" href="#">Здоровье</a>
+		                    </li>
+		                    <li class="menu-sorting__item">
+		                      <a class="menu-sorting__link" href="#">Компьютеры</a>
+		                    </li>
+		                    <li class="menu-sorting__item">
+		                      <a class="menu-sorting__link" href="#">Красота</a>
+		                    </li>
+		                    <li class="menu-sorting__item">
+		                      <a class="menu-sorting__link" href="#">Одежда и аксессуары</a>
+		                    </li>
+		                    <li class="menu-sorting__item">
+		                      <a class="menu-sorting__link" href="#">Ремонт и недвижимость</a>
+		                    </li>
+		                    <li class="menu-sorting__item">
+		                      <a class="menu-sorting__link" href="#">Спорт и фитнес</a>
+		                    </li>
+		                    <li class="menu-sorting__item">
+		                      <a class="menu-sorting__link" href="#">Товары для дома</a>
+		                    </li>
+		                    <li class="menu-sorting__item">
+		                      <a class="menu-sorting__link" href="#">Туризм</a>
+		                    </li>
+		                    <li class="menu-sorting__item">
+		                      <a class="menu-sorting__link" href="#">Хобби</a>
+		                    </li>
+		                    <li class="menu-sorting__item">
+		                      <a class="menu-sorting__link" href="#">Электроника</a>
+		                    </li>
+                  		</ul>
+                	</div>
+
+                <div class="col-md-12">
+                	<div class="row">
+	                    <div class="col">
+							<!-- BEGIN CART-GRID -->
+							
+							<div class="cart-grid">
+							    <div class="cart-grid_row">
+							        <div class="cart-grid_item">
+							            <!-- BEGIN CART-MAIN -->
+							            
+							            <a href="#" class="cart-main-decor link">
+							            	<div class="cart-main">
+							            		<picture>
+							            			<div class="cart-main_image-cont">
+							            				<img class="cart-main_image" src="img/business-desk-with-gadgets-and-personal-possessions.jpg" alt="image">
+							            			</div>
+							            		</picture>
+							            		<div class="cart-main_block-info">
+							            			<h3 class="cart-main_title">5 способов укрепить свое ваше здоровье на долгие годы, самые провереные методы и способы от ведущих врачей</h3>
+							            			<footer class="cart-main_info">
+							            				<img src="img/icons/16px/Eye.svg" alt="eye" width="24px" height="24px">
+							            				<span>1289</span>
+							            			</footer>
+							            		</div>
+							            	</div>
+							            	<div class="cart-main-decor_block">
+							            		<img src="img/icons/Combined Shape.svg" alt="icon">
+							            	</div>
+							            	<div class="cart-main-decor_block-text">
+							            		Новинка
+							            	</div>
+							            </a>
+							            
+							            <!-- END CART-MAIN -->
+							        </div>
+							        <div class="cart-grid_item">
+							            <!-- BEGIN CART-MAIN -->
+							            
+							            <a href="#" class="cart-main-decor link">
+							            	<div class="cart-main">
+							            		<picture>
+							            			<div class="cart-main_image-cont">
+							            				<img class="cart-main_image" src="img/business-desk-with-gadgets-and-personal-possessions.jpg" alt="image">
+							            			</div>
+							            		</picture>
+							            		<div class="cart-main_block-info">
+							            			<h3 class="cart-main_title">5 способов укрепить свое ваше здоровье на долгие годы, самые провереные методы и способы от ведущих врачей</h3>
+							            			<footer class="cart-main_info">
+							            				<img src="img/icons/16px/Eye.svg" alt="eye" width="24px" height="24px">
+							            				<span>1289</span>
+							            			</footer>
+							            		</div>
+							            	</div>
+							            	<div class="cart-main-decor_block">
+							            		<img src="img/icons/Combined Shape.svg" alt="icon">
+							            	</div>
+							            	<div class="cart-main-decor_block-text">
+							            		Новинка
+							            	</div>
+							            </a>
+							            
+							            <!-- END CART-MAIN -->
+							        </div>
+							        <div class="cart-grid_item">
+							            <!-- BEGIN CART-MAIN -->
+							            
+							            <a href="#" class="cart-main-decor link">
+							            	<div class="cart-main">
+							            		<picture>
+							            			<div class="cart-main_image-cont">
+							            				<img class="cart-main_image" src="img/business-desk-with-gadgets-and-personal-possessions.jpg" alt="image">
+							            			</div>
+							            		</picture>
+							            		<div class="cart-main_block-info">
+							            			<h3 class="cart-main_title">5 способов укрепить свое ваше здоровье на долгие годы, самые провереные методы и способы от ведущих врачей</h3>
+							            			<footer class="cart-main_info">
+							            				<img src="img/icons/16px/Eye.svg" alt="eye" width="24px" height="24px">
+							            				<span>1289</span>
+							            			</footer>
+							            		</div>
+							            	</div>
+							            	<div class="cart-main-decor_block">
+							            		<img src="img/icons/Combined Shape.svg" alt="icon">
+							            	</div>
+							            	<div class="cart-main-decor_block-text">
+							            		Новинка
+							            	</div>
+							            </a>
+							            
+							            <!-- END CART-MAIN -->
+							        </div>
+							        <div class="cart-grid_item">
+							            <!-- BEGIN CART-MAIN -->
+							            
+							            <a href="#" class="cart-main-decor link">
+							            	<div class="cart-main">
+							            		<picture>
+							            			<div class="cart-main_image-cont">
+							            				<img class="cart-main_image" src="img/business-desk-with-gadgets-and-personal-possessions.jpg" alt="image">
+							            			</div>
+							            		</picture>
+							            		<div class="cart-main_block-info">
+							            			<h3 class="cart-main_title">5 способов укрепить свое ваше здоровье на долгие годы, самые провереные методы и способы от ведущих врачей</h3>
+							            			<footer class="cart-main_info">
+							            				<img src="img/icons/16px/Eye.svg" alt="eye" width="24px" height="24px">
+							            				<span>1289</span>
+							            			</footer>
+							            		</div>
+							            	</div>
+							            	<div class="cart-main-decor_block">
+							            		<img src="img/icons/Combined Shape.svg" alt="icon">
+							            	</div>
+							            	<div class="cart-main-decor_block-text">
+							            		Новинка
+							            	</div>
+							            </a>
+							            
+							            <!-- END CART-MAIN -->
+							        </div>
+							    </div>
+							</div>
+							
+							<!-- END CART-GRID -->
+	                    </div>
+	                    <div class="col">
+							<!-- BEGIN CART-GRID -->
+							
+							<div class="cart-grid">
+							    <div class="cart-grid_row">
+							        <div class="cart-grid_item">
+							            <!-- BEGIN CART-MAIN -->
+							            
+							            <a href="#" class="cart-main-decor link">
+							            	<div class="cart-main">
+							            		<picture>
+							            			<div class="cart-main_image-cont">
+							            				<img class="cart-main_image" src="img/business-desk-with-gadgets-and-personal-possessions.jpg" alt="image">
+							            			</div>
+							            		</picture>
+							            		<div class="cart-main_block-info">
+							            			<h3 class="cart-main_title">5 способов укрепить свое ваше здоровье на долгие годы, самые провереные методы и способы от ведущих врачей</h3>
+							            			<footer class="cart-main_info">
+							            				<img src="img/icons/16px/Eye.svg" alt="eye" width="24px" height="24px">
+							            				<span>1289</span>
+							            			</footer>
+							            		</div>
+							            	</div>
+							            	<div class="cart-main-decor_block">
+							            		<img src="img/icons/Combined Shape.svg" alt="icon">
+							            	</div>
+							            	<div class="cart-main-decor_block-text">
+							            		Новинка
+							            	</div>
+							            </a>
+							            
+							            <!-- END CART-MAIN -->
+							        </div>
+							        <div class="cart-grid_item">
+							            <!-- BEGIN CART-MAIN -->
+							            
+							            <a href="#" class="cart-main-decor link">
+							            	<div class="cart-main">
+							            		<picture>
+							            			<div class="cart-main_image-cont">
+							            				<img class="cart-main_image" src="img/business-desk-with-gadgets-and-personal-possessions.jpg" alt="image">
+							            			</div>
+							            		</picture>
+							            		<div class="cart-main_block-info">
+							            			<h3 class="cart-main_title">5 способов укрепить свое ваше здоровье на долгие годы, самые провереные методы и способы от ведущих врачей</h3>
+							            			<footer class="cart-main_info">
+							            				<img src="img/icons/16px/Eye.svg" alt="eye" width="24px" height="24px">
+							            				<span>1289</span>
+							            			</footer>
+							            		</div>
+							            	</div>
+							            	<div class="cart-main-decor_block">
+							            		<img src="img/icons/Combined Shape.svg" alt="icon">
+							            	</div>
+							            	<div class="cart-main-decor_block-text">
+							            		Новинка
+							            	</div>
+							            </a>
+							            
+							            <!-- END CART-MAIN -->
+							        </div>
+							        <div class="cart-grid_item">
+							            <!-- BEGIN CART-MAIN -->
+							            
+							            <a href="#" class="cart-main-decor link">
+							            	<div class="cart-main">
+							            		<picture>
+							            			<div class="cart-main_image-cont">
+							            				<img class="cart-main_image" src="img/business-desk-with-gadgets-and-personal-possessions.jpg" alt="image">
+							            			</div>
+							            		</picture>
+							            		<div class="cart-main_block-info">
+							            			<h3 class="cart-main_title">5 способов укрепить свое ваше здоровье на долгие годы, самые провереные методы и способы от ведущих врачей</h3>
+							            			<footer class="cart-main_info">
+							            				<img src="img/icons/16px/Eye.svg" alt="eye" width="24px" height="24px">
+							            				<span>1289</span>
+							            			</footer>
+							            		</div>
+							            	</div>
+							            	<div class="cart-main-decor_block">
+							            		<img src="img/icons/Combined Shape.svg" alt="icon">
+							            	</div>
+							            	<div class="cart-main-decor_block-text">
+							            		Новинка
+							            	</div>
+							            </a>
+							            
+							            <!-- END CART-MAIN -->
+							        </div>
+							        <div class="cart-grid_item">
+							            <!-- BEGIN CART-MAIN -->
+							            
+							            <a href="#" class="cart-main-decor link">
+							            	<div class="cart-main">
+							            		<picture>
+							            			<div class="cart-main_image-cont">
+							            				<img class="cart-main_image" src="img/business-desk-with-gadgets-and-personal-possessions.jpg" alt="image">
+							            			</div>
+							            		</picture>
+							            		<div class="cart-main_block-info">
+							            			<h3 class="cart-main_title">5 способов укрепить свое ваше здоровье на долгие годы, самые провереные методы и способы от ведущих врачей</h3>
+							            			<footer class="cart-main_info">
+							            				<img src="img/icons/16px/Eye.svg" alt="eye" width="24px" height="24px">
+							            				<span>1289</span>
+							            			</footer>
+							            		</div>
+							            	</div>
+							            	<div class="cart-main-decor_block">
+							            		<img src="img/icons/Combined Shape.svg" alt="icon">
+							            	</div>
+							            	<div class="cart-main-decor_block-text">
+							            		Новинка
+							            	</div>
+							            </a>
+							            
+							            <!-- END CART-MAIN -->
+							        </div>
+							    </div>
+							</div>
+							
+							<!-- END CART-GRID -->
+	                    </div>
+	                    <div class="col">
+							<!-- BEGIN CART-GRID -->
+							
+							<div class="cart-grid">
+							    <div class="cart-grid_row">
+							        <div class="cart-grid_item">
+							            <!-- BEGIN CART-MAIN -->
+							            
+							            <a href="#" class="cart-main-decor link">
+							            	<div class="cart-main">
+							            		<picture>
+							            			<div class="cart-main_image-cont">
+							            				<img class="cart-main_image" src="img/business-desk-with-gadgets-and-personal-possessions.jpg" alt="image">
+							            			</div>
+							            		</picture>
+							            		<div class="cart-main_block-info">
+							            			<h3 class="cart-main_title">5 способов укрепить свое ваше здоровье на долгие годы, самые провереные методы и способы от ведущих врачей</h3>
+							            			<footer class="cart-main_info">
+							            				<img src="img/icons/16px/Eye.svg" alt="eye" width="24px" height="24px">
+							            				<span>1289</span>
+							            			</footer>
+							            		</div>
+							            	</div>
+							            	<div class="cart-main-decor_block">
+							            		<img src="img/icons/Combined Shape.svg" alt="icon">
+							            	</div>
+							            	<div class="cart-main-decor_block-text">
+							            		Новинка
+							            	</div>
+							            </a>
+							            
+							            <!-- END CART-MAIN -->
+							        </div>
+							        <div class="cart-grid_item">
+							            <!-- BEGIN CART-MAIN -->
+							            
+							            <a href="#" class="cart-main-decor link">
+							            	<div class="cart-main">
+							            		<picture>
+							            			<div class="cart-main_image-cont">
+							            				<img class="cart-main_image" src="img/business-desk-with-gadgets-and-personal-possessions.jpg" alt="image">
+							            			</div>
+							            		</picture>
+							            		<div class="cart-main_block-info">
+							            			<h3 class="cart-main_title">5 способов укрепить свое ваше здоровье на долгие годы, самые провереные методы и способы от ведущих врачей</h3>
+							            			<footer class="cart-main_info">
+							            				<img src="img/icons/16px/Eye.svg" alt="eye" width="24px" height="24px">
+							            				<span>1289</span>
+							            			</footer>
+							            		</div>
+							            	</div>
+							            	<div class="cart-main-decor_block">
+							            		<img src="img/icons/Combined Shape.svg" alt="icon">
+							            	</div>
+							            	<div class="cart-main-decor_block-text">
+							            		Новинка
+							            	</div>
+							            </a>
+							            
+							            <!-- END CART-MAIN -->
+							        </div>
+							        <div class="cart-grid_item">
+							            <!-- BEGIN CART-MAIN -->
+							            
+							            <a href="#" class="cart-main-decor link">
+							            	<div class="cart-main">
+							            		<picture>
+							            			<div class="cart-main_image-cont">
+							            				<img class="cart-main_image" src="img/business-desk-with-gadgets-and-personal-possessions.jpg" alt="image">
+							            			</div>
+							            		</picture>
+							            		<div class="cart-main_block-info">
+							            			<h3 class="cart-main_title">5 способов укрепить свое ваше здоровье на долгие годы, самые провереные методы и способы от ведущих врачей</h3>
+							            			<footer class="cart-main_info">
+							            				<img src="img/icons/16px/Eye.svg" alt="eye" width="24px" height="24px">
+							            				<span>1289</span>
+							            			</footer>
+							            		</div>
+							            	</div>
+							            	<div class="cart-main-decor_block">
+							            		<img src="img/icons/Combined Shape.svg" alt="icon">
+							            	</div>
+							            	<div class="cart-main-decor_block-text">
+							            		Новинка
+							            	</div>
+							            </a>
+							            
+							            <!-- END CART-MAIN -->
+							        </div>
+							        <div class="cart-grid_item">
+							            <!-- BEGIN CART-MAIN -->
+							            
+							            <a href="#" class="cart-main-decor link">
+							            	<div class="cart-main">
+							            		<picture>
+							            			<div class="cart-main_image-cont">
+							            				<img class="cart-main_image" src="img/business-desk-with-gadgets-and-personal-possessions.jpg" alt="image">
+							            			</div>
+							            		</picture>
+							            		<div class="cart-main_block-info">
+							            			<h3 class="cart-main_title">5 способов укрепить свое ваше здоровье на долгие годы, самые провереные методы и способы от ведущих врачей</h3>
+							            			<footer class="cart-main_info">
+							            				<img src="img/icons/16px/Eye.svg" alt="eye" width="24px" height="24px">
+							            				<span>1289</span>
+							            			</footer>
+							            		</div>
+							            	</div>
+							            	<div class="cart-main-decor_block">
+							            		<img src="img/icons/Combined Shape.svg" alt="icon">
+							            	</div>
+							            	<div class="cart-main-decor_block-text">
+							            		Новинка
+							            	</div>
+							            </a>
+							            
+							            <!-- END CART-MAIN -->
+							        </div>
+							    </div>
+							</div>
+							
+							<!-- END CART-GRID -->
+	                    </div>
+                	</div>
+                	<div class="row">
+	                    <div class="col">
+							<!-- BEGIN CART-GRID -->
+							
+							<div class="cart-grid">
+							    <div class="cart-grid_row">
+							        <div class="cart-grid_item">
+							            <!-- BEGIN CART-MAIN -->
+							            
+							            <a href="#" class="cart-main-decor link">
+							            	<div class="cart-main">
+							            		<picture>
+							            			<div class="cart-main_image-cont">
+							            				<img class="cart-main_image" src="img/business-desk-with-gadgets-and-personal-possessions.jpg" alt="image">
+							            			</div>
+							            		</picture>
+							            		<div class="cart-main_block-info">
+							            			<h3 class="cart-main_title">5 способов укрепить свое ваше здоровье на долгие годы, самые провереные методы и способы от ведущих врачей</h3>
+							            			<footer class="cart-main_info">
+							            				<img src="img/icons/16px/Eye.svg" alt="eye" width="24px" height="24px">
+							            				<span>1289</span>
+							            			</footer>
+							            		</div>
+							            	</div>
+							            	<div class="cart-main-decor_block">
+							            		<img src="img/icons/Combined Shape.svg" alt="icon">
+							            	</div>
+							            	<div class="cart-main-decor_block-text">
+							            		Новинка
+							            	</div>
+							            </a>
+							            
+							            <!-- END CART-MAIN -->
+							        </div>
+							        <div class="cart-grid_item">
+							            <!-- BEGIN CART-MAIN -->
+							            
+							            <a href="#" class="cart-main-decor link">
+							            	<div class="cart-main">
+							            		<picture>
+							            			<div class="cart-main_image-cont">
+							            				<img class="cart-main_image" src="img/business-desk-with-gadgets-and-personal-possessions.jpg" alt="image">
+							            			</div>
+							            		</picture>
+							            		<div class="cart-main_block-info">
+							            			<h3 class="cart-main_title">5 способов укрепить свое ваше здоровье на долгие годы, самые провереные методы и способы от ведущих врачей</h3>
+							            			<footer class="cart-main_info">
+							            				<img src="img/icons/16px/Eye.svg" alt="eye" width="24px" height="24px">
+							            				<span>1289</span>
+							            			</footer>
+							            		</div>
+							            	</div>
+							            	<div class="cart-main-decor_block">
+							            		<img src="img/icons/Combined Shape.svg" alt="icon">
+							            	</div>
+							            	<div class="cart-main-decor_block-text">
+							            		Новинка
+							            	</div>
+							            </a>
+							            
+							            <!-- END CART-MAIN -->
+							        </div>
+							        <div class="cart-grid_item">
+							            <!-- BEGIN CART-MAIN -->
+							            
+							            <a href="#" class="cart-main-decor link">
+							            	<div class="cart-main">
+							            		<picture>
+							            			<div class="cart-main_image-cont">
+							            				<img class="cart-main_image" src="img/business-desk-with-gadgets-and-personal-possessions.jpg" alt="image">
+							            			</div>
+							            		</picture>
+							            		<div class="cart-main_block-info">
+							            			<h3 class="cart-main_title">5 способов укрепить свое ваше здоровье на долгие годы, самые провереные методы и способы от ведущих врачей</h3>
+							            			<footer class="cart-main_info">
+							            				<img src="img/icons/16px/Eye.svg" alt="eye" width="24px" height="24px">
+							            				<span>1289</span>
+							            			</footer>
+							            		</div>
+							            	</div>
+							            	<div class="cart-main-decor_block">
+							            		<img src="img/icons/Combined Shape.svg" alt="icon">
+							            	</div>
+							            	<div class="cart-main-decor_block-text">
+							            		Новинка
+							            	</div>
+							            </a>
+							            
+							            <!-- END CART-MAIN -->
+							        </div>
+							        <div class="cart-grid_item">
+							            <!-- BEGIN CART-MAIN -->
+							            
+							            <a href="#" class="cart-main-decor link">
+							            	<div class="cart-main">
+							            		<picture>
+							            			<div class="cart-main_image-cont">
+							            				<img class="cart-main_image" src="img/business-desk-with-gadgets-and-personal-possessions.jpg" alt="image">
+							            			</div>
+							            		</picture>
+							            		<div class="cart-main_block-info">
+							            			<h3 class="cart-main_title">5 способов укрепить свое ваше здоровье на долгие годы, самые провереные методы и способы от ведущих врачей</h3>
+							            			<footer class="cart-main_info">
+							            				<img src="img/icons/16px/Eye.svg" alt="eye" width="24px" height="24px">
+							            				<span>1289</span>
+							            			</footer>
+							            		</div>
+							            	</div>
+							            	<div class="cart-main-decor_block">
+							            		<img src="img/icons/Combined Shape.svg" alt="icon">
+							            	</div>
+							            	<div class="cart-main-decor_block-text">
+							            		Новинка
+							            	</div>
+							            </a>
+							            
+							            <!-- END CART-MAIN -->
+							        </div>
+							    </div>
+							</div>
+							
+							<!-- END CART-GRID -->
+	                    </div>
+	                    <div class="col">
+							<!-- BEGIN CART-GRID -->
+							
+							<div class="cart-grid">
+							    <div class="cart-grid_row">
+							        <div class="cart-grid_item">
+							            <!-- BEGIN CART-MAIN -->
+							            
+							            <a href="#" class="cart-main-decor link">
+							            	<div class="cart-main">
+							            		<picture>
+							            			<div class="cart-main_image-cont">
+							            				<img class="cart-main_image" src="img/business-desk-with-gadgets-and-personal-possessions.jpg" alt="image">
+							            			</div>
+							            		</picture>
+							            		<div class="cart-main_block-info">
+							            			<h3 class="cart-main_title">5 способов укрепить свое ваше здоровье на долгие годы, самые провереные методы и способы от ведущих врачей</h3>
+							            			<footer class="cart-main_info">
+							            				<img src="img/icons/16px/Eye.svg" alt="eye" width="24px" height="24px">
+							            				<span>1289</span>
+							            			</footer>
+							            		</div>
+							            	</div>
+							            	<div class="cart-main-decor_block">
+							            		<img src="img/icons/Combined Shape.svg" alt="icon">
+							            	</div>
+							            	<div class="cart-main-decor_block-text">
+							            		Новинка
+							            	</div>
+							            </a>
+							            
+							            <!-- END CART-MAIN -->
+							        </div>
+							        <div class="cart-grid_item">
+							            <!-- BEGIN CART-MAIN -->
+							            
+							            <a href="#" class="cart-main-decor link">
+							            	<div class="cart-main">
+							            		<picture>
+							            			<div class="cart-main_image-cont">
+							            				<img class="cart-main_image" src="img/business-desk-with-gadgets-and-personal-possessions.jpg" alt="image">
+							            			</div>
+							            		</picture>
+							            		<div class="cart-main_block-info">
+							            			<h3 class="cart-main_title">5 способов укрепить свое ваше здоровье на долгие годы, самые провереные методы и способы от ведущих врачей</h3>
+							            			<footer class="cart-main_info">
+							            				<img src="img/icons/16px/Eye.svg" alt="eye" width="24px" height="24px">
+							            				<span>1289</span>
+							            			</footer>
+							            		</div>
+							            	</div>
+							            	<div class="cart-main-decor_block">
+							            		<img src="img/icons/Combined Shape.svg" alt="icon">
+							            	</div>
+							            	<div class="cart-main-decor_block-text">
+							            		Новинка
+							            	</div>
+							            </a>
+							            
+							            <!-- END CART-MAIN -->
+							        </div>
+							        <div class="cart-grid_item">
+							            <!-- BEGIN CART-MAIN -->
+							            
+							            <a href="#" class="cart-main-decor link">
+							            	<div class="cart-main">
+							            		<picture>
+							            			<div class="cart-main_image-cont">
+							            				<img class="cart-main_image" src="img/business-desk-with-gadgets-and-personal-possessions.jpg" alt="image">
+							            			</div>
+							            		</picture>
+							            		<div class="cart-main_block-info">
+							            			<h3 class="cart-main_title">5 способов укрепить свое ваше здоровье на долгие годы, самые провереные методы и способы от ведущих врачей</h3>
+							            			<footer class="cart-main_info">
+							            				<img src="img/icons/16px/Eye.svg" alt="eye" width="24px" height="24px">
+							            				<span>1289</span>
+							            			</footer>
+							            		</div>
+							            	</div>
+							            	<div class="cart-main-decor_block">
+							            		<img src="img/icons/Combined Shape.svg" alt="icon">
+							            	</div>
+							            	<div class="cart-main-decor_block-text">
+							            		Новинка
+							            	</div>
+							            </a>
+							            
+							            <!-- END CART-MAIN -->
+							        </div>
+							        <div class="cart-grid_item">
+							            <!-- BEGIN CART-MAIN -->
+							            
+							            <a href="#" class="cart-main-decor link">
+							            	<div class="cart-main">
+							            		<picture>
+							            			<div class="cart-main_image-cont">
+							            				<img class="cart-main_image" src="img/business-desk-with-gadgets-and-personal-possessions.jpg" alt="image">
+							            			</div>
+							            		</picture>
+							            		<div class="cart-main_block-info">
+							            			<h3 class="cart-main_title">5 способов укрепить свое ваше здоровье на долгие годы, самые провереные методы и способы от ведущих врачей</h3>
+							            			<footer class="cart-main_info">
+							            				<img src="img/icons/16px/Eye.svg" alt="eye" width="24px" height="24px">
+							            				<span>1289</span>
+							            			</footer>
+							            		</div>
+							            	</div>
+							            	<div class="cart-main-decor_block">
+							            		<img src="img/icons/Combined Shape.svg" alt="icon">
+							            	</div>
+							            	<div class="cart-main-decor_block-text">
+							            		Новинка
+							            	</div>
+							            </a>
+							            
+							            <!-- END CART-MAIN -->
+							        </div>
+							    </div>
+							</div>
+							
+							<!-- END CART-GRID -->
+	                    </div>
+	                    <div class="col">
+							<!-- BEGIN CART-GRID -->
+							
+							<div class="cart-grid">
+							    <div class="cart-grid_row">
+							        <div class="cart-grid_item">
+							            <!-- BEGIN CART-MAIN -->
+							            
+							            <a href="#" class="cart-main-decor link">
+							            	<div class="cart-main">
+							            		<picture>
+							            			<div class="cart-main_image-cont">
+							            				<img class="cart-main_image" src="img/business-desk-with-gadgets-and-personal-possessions.jpg" alt="image">
+							            			</div>
+							            		</picture>
+							            		<div class="cart-main_block-info">
+							            			<h3 class="cart-main_title">5 способов укрепить свое ваше здоровье на долгие годы, самые провереные методы и способы от ведущих врачей</h3>
+							            			<footer class="cart-main_info">
+							            				<img src="img/icons/16px/Eye.svg" alt="eye" width="24px" height="24px">
+							            				<span>1289</span>
+							            			</footer>
+							            		</div>
+							            	</div>
+							            	<div class="cart-main-decor_block">
+							            		<img src="img/icons/Combined Shape.svg" alt="icon">
+							            	</div>
+							            	<div class="cart-main-decor_block-text">
+							            		Новинка
+							            	</div>
+							            </a>
+							            
+							            <!-- END CART-MAIN -->
+							        </div>
+							        <div class="cart-grid_item">
+							            <!-- BEGIN CART-MAIN -->
+							            
+							            <a href="#" class="cart-main-decor link">
+							            	<div class="cart-main">
+							            		<picture>
+							            			<div class="cart-main_image-cont">
+							            				<img class="cart-main_image" src="img/business-desk-with-gadgets-and-personal-possessions.jpg" alt="image">
+							            			</div>
+							            		</picture>
+							            		<div class="cart-main_block-info">
+							            			<h3 class="cart-main_title">5 способов укрепить свое ваше здоровье на долгие годы, самые провереные методы и способы от ведущих врачей</h3>
+							            			<footer class="cart-main_info">
+							            				<img src="img/icons/16px/Eye.svg" alt="eye" width="24px" height="24px">
+							            				<span>1289</span>
+							            			</footer>
+							            		</div>
+							            	</div>
+							            	<div class="cart-main-decor_block">
+							            		<img src="img/icons/Combined Shape.svg" alt="icon">
+							            	</div>
+							            	<div class="cart-main-decor_block-text">
+							            		Новинка
+							            	</div>
+							            </a>
+							            
+							            <!-- END CART-MAIN -->
+							        </div>
+							        <div class="cart-grid_item">
+							            <!-- BEGIN CART-MAIN -->
+							            
+							            <a href="#" class="cart-main-decor link">
+							            	<div class="cart-main">
+							            		<picture>
+							            			<div class="cart-main_image-cont">
+							            				<img class="cart-main_image" src="img/business-desk-with-gadgets-and-personal-possessions.jpg" alt="image">
+							            			</div>
+							            		</picture>
+							            		<div class="cart-main_block-info">
+							            			<h3 class="cart-main_title">5 способов укрепить свое ваше здоровье на долгие годы, самые провереные методы и способы от ведущих врачей</h3>
+							            			<footer class="cart-main_info">
+							            				<img src="img/icons/16px/Eye.svg" alt="eye" width="24px" height="24px">
+							            				<span>1289</span>
+							            			</footer>
+							            		</div>
+							            	</div>
+							            	<div class="cart-main-decor_block">
+							            		<img src="img/icons/Combined Shape.svg" alt="icon">
+							            	</div>
+							            	<div class="cart-main-decor_block-text">
+							            		Новинка
+							            	</div>
+							            </a>
+							            
+							            <!-- END CART-MAIN -->
+							        </div>
+							        <div class="cart-grid_item">
+							            <!-- BEGIN CART-MAIN -->
+							            
+							            <a href="#" class="cart-main-decor link">
+							            	<div class="cart-main">
+							            		<picture>
+							            			<div class="cart-main_image-cont">
+							            				<img class="cart-main_image" src="img/business-desk-with-gadgets-and-personal-possessions.jpg" alt="image">
+							            			</div>
+							            		</picture>
+							            		<div class="cart-main_block-info">
+							            			<h3 class="cart-main_title">5 способов укрепить свое ваше здоровье на долгие годы, самые провереные методы и способы от ведущих врачей</h3>
+							            			<footer class="cart-main_info">
+							            				<img src="img/icons/16px/Eye.svg" alt="eye" width="24px" height="24px">
+							            				<span>1289</span>
+							            			</footer>
+							            		</div>
+							            	</div>
+							            	<div class="cart-main-decor_block">
+							            		<img src="img/icons/Combined Shape.svg" alt="icon">
+							            	</div>
+							            	<div class="cart-main-decor_block-text">
+							            		Новинка
+							            	</div>
+							            </a>
+							            
+							            <!-- END CART-MAIN -->
+							        </div>
+							    </div>
+							</div>
+							
+							<!-- END CART-GRID -->
+	                    </div>
+                	</div>
+                	<div class="row">
+	                    <div class="col">
+							<!-- BEGIN CART-GRID -->
+							
+							<div class="cart-grid">
+							    <div class="cart-grid_row">
+							        <div class="cart-grid_item">
+							            <!-- BEGIN CART-MAIN -->
+							            
+							            <a href="#" class="cart-main-decor link">
+							            	<div class="cart-main">
+							            		<picture>
+							            			<div class="cart-main_image-cont">
+							            				<img class="cart-main_image" src="img/business-desk-with-gadgets-and-personal-possessions.jpg" alt="image">
+							            			</div>
+							            		</picture>
+							            		<div class="cart-main_block-info">
+							            			<h3 class="cart-main_title">5 способов укрепить свое ваше здоровье на долгие годы, самые провереные методы и способы от ведущих врачей</h3>
+							            			<footer class="cart-main_info">
+							            				<img src="img/icons/16px/Eye.svg" alt="eye" width="24px" height="24px">
+							            				<span>1289</span>
+							            			</footer>
+							            		</div>
+							            	</div>
+							            	<div class="cart-main-decor_block">
+							            		<img src="img/icons/Combined Shape.svg" alt="icon">
+							            	</div>
+							            	<div class="cart-main-decor_block-text">
+							            		Новинка
+							            	</div>
+							            </a>
+							            
+							            <!-- END CART-MAIN -->
+							        </div>
+							        <div class="cart-grid_item">
+							            <!-- BEGIN CART-MAIN -->
+							            
+							            <a href="#" class="cart-main-decor link">
+							            	<div class="cart-main">
+							            		<picture>
+							            			<div class="cart-main_image-cont">
+							            				<img class="cart-main_image" src="img/business-desk-with-gadgets-and-personal-possessions.jpg" alt="image">
+							            			</div>
+							            		</picture>
+							            		<div class="cart-main_block-info">
+							            			<h3 class="cart-main_title">5 способов укрепить свое ваше здоровье на долгие годы, самые провереные методы и способы от ведущих врачей</h3>
+							            			<footer class="cart-main_info">
+							            				<img src="img/icons/16px/Eye.svg" alt="eye" width="24px" height="24px">
+							            				<span>1289</span>
+							            			</footer>
+							            		</div>
+							            	</div>
+							            	<div class="cart-main-decor_block">
+							            		<img src="img/icons/Combined Shape.svg" alt="icon">
+							            	</div>
+							            	<div class="cart-main-decor_block-text">
+							            		Новинка
+							            	</div>
+							            </a>
+							            
+							            <!-- END CART-MAIN -->
+							        </div>
+							        <div class="cart-grid_item">
+							            <!-- BEGIN CART-MAIN -->
+							            
+							            <a href="#" class="cart-main-decor link">
+							            	<div class="cart-main">
+							            		<picture>
+							            			<div class="cart-main_image-cont">
+							            				<img class="cart-main_image" src="img/business-desk-with-gadgets-and-personal-possessions.jpg" alt="image">
+							            			</div>
+							            		</picture>
+							            		<div class="cart-main_block-info">
+							            			<h3 class="cart-main_title">5 способов укрепить свое ваше здоровье на долгие годы, самые провереные методы и способы от ведущих врачей</h3>
+							            			<footer class="cart-main_info">
+							            				<img src="img/icons/16px/Eye.svg" alt="eye" width="24px" height="24px">
+							            				<span>1289</span>
+							            			</footer>
+							            		</div>
+							            	</div>
+							            	<div class="cart-main-decor_block">
+							            		<img src="img/icons/Combined Shape.svg" alt="icon">
+							            	</div>
+							            	<div class="cart-main-decor_block-text">
+							            		Новинка
+							            	</div>
+							            </a>
+							            
+							            <!-- END CART-MAIN -->
+							        </div>
+							        <div class="cart-grid_item">
+							            <!-- BEGIN CART-MAIN -->
+							            
+							            <a href="#" class="cart-main-decor link">
+							            	<div class="cart-main">
+							            		<picture>
+							            			<div class="cart-main_image-cont">
+							            				<img class="cart-main_image" src="img/business-desk-with-gadgets-and-personal-possessions.jpg" alt="image">
+							            			</div>
+							            		</picture>
+							            		<div class="cart-main_block-info">
+							            			<h3 class="cart-main_title">5 способов укрепить свое ваше здоровье на долгие годы, самые провереные методы и способы от ведущих врачей</h3>
+							            			<footer class="cart-main_info">
+							            				<img src="img/icons/16px/Eye.svg" alt="eye" width="24px" height="24px">
+							            				<span>1289</span>
+							            			</footer>
+							            		</div>
+							            	</div>
+							            	<div class="cart-main-decor_block">
+							            		<img src="img/icons/Combined Shape.svg" alt="icon">
+							            	</div>
+							            	<div class="cart-main-decor_block-text">
+							            		Новинка
+							            	</div>
+							            </a>
+							            
+							            <!-- END CART-MAIN -->
+							        </div>
+							    </div>
+							</div>
+							
+							<!-- END CART-GRID -->
+	                    </div>
+	                    <div class="col">
+							<!-- BEGIN CART-GRID -->
+							
+							<div class="cart-grid">
+							    <div class="cart-grid_row">
+							        <div class="cart-grid_item">
+							            <!-- BEGIN CART-MAIN -->
+							            
+							            <a href="#" class="cart-main-decor link">
+							            	<div class="cart-main">
+							            		<picture>
+							            			<div class="cart-main_image-cont">
+							            				<img class="cart-main_image" src="img/business-desk-with-gadgets-and-personal-possessions.jpg" alt="image">
+							            			</div>
+							            		</picture>
+							            		<div class="cart-main_block-info">
+							            			<h3 class="cart-main_title">5 способов укрепить свое ваше здоровье на долгие годы, самые провереные методы и способы от ведущих врачей</h3>
+							            			<footer class="cart-main_info">
+							            				<img src="img/icons/16px/Eye.svg" alt="eye" width="24px" height="24px">
+							            				<span>1289</span>
+							            			</footer>
+							            		</div>
+							            	</div>
+							            	<div class="cart-main-decor_block">
+							            		<img src="img/icons/Combined Shape.svg" alt="icon">
+							            	</div>
+							            	<div class="cart-main-decor_block-text">
+							            		Новинка
+							            	</div>
+							            </a>
+							            
+							            <!-- END CART-MAIN -->
+							        </div>
+							        <div class="cart-grid_item">
+							            <!-- BEGIN CART-MAIN -->
+							            
+							            <a href="#" class="cart-main-decor link">
+							            	<div class="cart-main">
+							            		<picture>
+							            			<div class="cart-main_image-cont">
+							            				<img class="cart-main_image" src="img/business-desk-with-gadgets-and-personal-possessions.jpg" alt="image">
+							            			</div>
+							            		</picture>
+							            		<div class="cart-main_block-info">
+							            			<h3 class="cart-main_title">5 способов укрепить свое ваше здоровье на долгие годы, самые провереные методы и способы от ведущих врачей</h3>
+							            			<footer class="cart-main_info">
+							            				<img src="img/icons/16px/Eye.svg" alt="eye" width="24px" height="24px">
+							            				<span>1289</span>
+							            			</footer>
+							            		</div>
+							            	</div>
+							            	<div class="cart-main-decor_block">
+							            		<img src="img/icons/Combined Shape.svg" alt="icon">
+							            	</div>
+							            	<div class="cart-main-decor_block-text">
+							            		Новинка
+							            	</div>
+							            </a>
+							            
+							            <!-- END CART-MAIN -->
+							        </div>
+							        <div class="cart-grid_item">
+							            <!-- BEGIN CART-MAIN -->
+							            
+							            <a href="#" class="cart-main-decor link">
+							            	<div class="cart-main">
+							            		<picture>
+							            			<div class="cart-main_image-cont">
+							            				<img class="cart-main_image" src="img/business-desk-with-gadgets-and-personal-possessions.jpg" alt="image">
+							            			</div>
+							            		</picture>
+							            		<div class="cart-main_block-info">
+							            			<h3 class="cart-main_title">5 способов укрепить свое ваше здоровье на долгие годы, самые провереные методы и способы от ведущих врачей</h3>
+							            			<footer class="cart-main_info">
+							            				<img src="img/icons/16px/Eye.svg" alt="eye" width="24px" height="24px">
+							            				<span>1289</span>
+							            			</footer>
+							            		</div>
+							            	</div>
+							            	<div class="cart-main-decor_block">
+							            		<img src="img/icons/Combined Shape.svg" alt="icon">
+							            	</div>
+							            	<div class="cart-main-decor_block-text">
+							            		Новинка
+							            	</div>
+							            </a>
+							            
+							            <!-- END CART-MAIN -->
+							        </div>
+							        <div class="cart-grid_item">
+							            <!-- BEGIN CART-MAIN -->
+							            
+							            <a href="#" class="cart-main-decor link">
+							            	<div class="cart-main">
+							            		<picture>
+							            			<div class="cart-main_image-cont">
+							            				<img class="cart-main_image" src="img/business-desk-with-gadgets-and-personal-possessions.jpg" alt="image">
+							            			</div>
+							            		</picture>
+							            		<div class="cart-main_block-info">
+							            			<h3 class="cart-main_title">5 способов укрепить свое ваше здоровье на долгие годы, самые провереные методы и способы от ведущих врачей</h3>
+							            			<footer class="cart-main_info">
+							            				<img src="img/icons/16px/Eye.svg" alt="eye" width="24px" height="24px">
+							            				<span>1289</span>
+							            			</footer>
+							            		</div>
+							            	</div>
+							            	<div class="cart-main-decor_block">
+							            		<img src="img/icons/Combined Shape.svg" alt="icon">
+							            	</div>
+							            	<div class="cart-main-decor_block-text">
+							            		Новинка
+							            	</div>
+							            </a>
+							            
+							            <!-- END CART-MAIN -->
+							        </div>
+							    </div>
+							</div>
+							
+							<!-- END CART-GRID -->
+	                    </div>
+	                    <div class="col">
+							<!-- BEGIN CART-GRID -->
+							
+							<div class="cart-grid">
+							    <div class="cart-grid_row">
+							        <div class="cart-grid_item">
+							            <!-- BEGIN CART-MAIN -->
+							            
+							            <a href="#" class="cart-main-decor link">
+							            	<div class="cart-main">
+							            		<picture>
+							            			<div class="cart-main_image-cont">
+							            				<img class="cart-main_image" src="img/business-desk-with-gadgets-and-personal-possessions.jpg" alt="image">
+							            			</div>
+							            		</picture>
+							            		<div class="cart-main_block-info">
+							            			<h3 class="cart-main_title">5 способов укрепить свое ваше здоровье на долгие годы, самые провереные методы и способы от ведущих врачей</h3>
+							            			<footer class="cart-main_info">
+							            				<img src="img/icons/16px/Eye.svg" alt="eye" width="24px" height="24px">
+							            				<span>1289</span>
+							            			</footer>
+							            		</div>
+							            	</div>
+							            	<div class="cart-main-decor_block">
+							            		<img src="img/icons/Combined Shape.svg" alt="icon">
+							            	</div>
+							            	<div class="cart-main-decor_block-text">
+							            		Новинка
+							            	</div>
+							            </a>
+							            
+							            <!-- END CART-MAIN -->
+							        </div>
+							        <div class="cart-grid_item">
+							            <!-- BEGIN CART-MAIN -->
+							            
+							            <a href="#" class="cart-main-decor link">
+							            	<div class="cart-main">
+							            		<picture>
+							            			<div class="cart-main_image-cont">
+							            				<img class="cart-main_image" src="img/business-desk-with-gadgets-and-personal-possessions.jpg" alt="image">
+							            			</div>
+							            		</picture>
+							            		<div class="cart-main_block-info">
+							            			<h3 class="cart-main_title">5 способов укрепить свое ваше здоровье на долгие годы, самые провереные методы и способы от ведущих врачей</h3>
+							            			<footer class="cart-main_info">
+							            				<img src="img/icons/16px/Eye.svg" alt="eye" width="24px" height="24px">
+							            				<span>1289</span>
+							            			</footer>
+							            		</div>
+							            	</div>
+							            	<div class="cart-main-decor_block">
+							            		<img src="img/icons/Combined Shape.svg" alt="icon">
+							            	</div>
+							            	<div class="cart-main-decor_block-text">
+							            		Новинка
+							            	</div>
+							            </a>
+							            
+							            <!-- END CART-MAIN -->
+							        </div>
+							        <div class="cart-grid_item">
+							            <!-- BEGIN CART-MAIN -->
+							            
+							            <a href="#" class="cart-main-decor link">
+							            	<div class="cart-main">
+							            		<picture>
+							            			<div class="cart-main_image-cont">
+							            				<img class="cart-main_image" src="img/business-desk-with-gadgets-and-personal-possessions.jpg" alt="image">
+							            			</div>
+							            		</picture>
+							            		<div class="cart-main_block-info">
+							            			<h3 class="cart-main_title">5 способов укрепить свое ваше здоровье на долгие годы, самые провереные методы и способы от ведущих врачей</h3>
+							            			<footer class="cart-main_info">
+							            				<img src="img/icons/16px/Eye.svg" alt="eye" width="24px" height="24px">
+							            				<span>1289</span>
+							            			</footer>
+							            		</div>
+							            	</div>
+							            	<div class="cart-main-decor_block">
+							            		<img src="img/icons/Combined Shape.svg" alt="icon">
+							            	</div>
+							            	<div class="cart-main-decor_block-text">
+							            		Новинка
+							            	</div>
+							            </a>
+							            
+							            <!-- END CART-MAIN -->
+							        </div>
+							        <div class="cart-grid_item">
+							            <!-- BEGIN CART-MAIN -->
+							            
+							            <a href="#" class="cart-main-decor link">
+							            	<div class="cart-main">
+							            		<picture>
+							            			<div class="cart-main_image-cont">
+							            				<img class="cart-main_image" src="img/business-desk-with-gadgets-and-personal-possessions.jpg" alt="image">
+							            			</div>
+							            		</picture>
+							            		<div class="cart-main_block-info">
+							            			<h3 class="cart-main_title">5 способов укрепить свое ваше здоровье на долгие годы, самые провереные методы и способы от ведущих врачей</h3>
+							            			<footer class="cart-main_info">
+							            				<img src="img/icons/16px/Eye.svg" alt="eye" width="24px" height="24px">
+							            				<span>1289</span>
+							            			</footer>
+							            		</div>
+							            	</div>
+							            	<div class="cart-main-decor_block">
+							            		<img src="img/icons/Combined Shape.svg" alt="icon">
+							            	</div>
+							            	<div class="cart-main-decor_block-text">
+							            		Новинка
+							            	</div>
+							            </a>
+							            
+							            <!-- END CART-MAIN -->
+							        </div>
+							    </div>
+							</div>
+							
+							<!-- END CART-GRID -->
+	                    </div>
+                  	</div>
+
+                  	<!-- BEGIN PAGINATE -->
+                  	<div class="paginate paginate--margin">
+                  	    <ul class="paginate__block">
+                  	        <li class="paginate__arrow-left">
+                  	            <a href="#">
+                  	                <span class="paginate-arrow paginate-arrow--left" href=""></span>
+                  	            </a>
+                  	        </li>
+                  	        <li class="paginate__list">
+                  	            <a class="paginate__link paginate__link--active" href="#">1</a>
+                  	        </li>
+                  	        <li class="paginate__list">
+                  	            <a class="paginate__link" href="#" class="inactive">2</a>
+                  	        </li>
+                  	        <li class="paginate__list">
+                  	            <a class="paginate__link" href="#" class="more">&hellip;</a>
+                  	        </li>
+                  	        <li class="paginate__list">
+                  	            <a class="paginate__link" href="#">11</a>
+                  	        </li>
+                  	        <li class="paginate__list">
+                  	            <a class="paginate__link" href="#">12</a>
+                  	        </li>
+                  	        <li class="paginate__arrow-right">
+                  	            <a href="#">
+                  	                <span class="paginate-arrow paginate-arrow--right" href=""></span>
+                  	            </a>
+                  	        </li>
+                  	    </ul>
+                  	</div>
+                  	<!-- END PAGINATE -->
+
+                	<!-- BEGIN SEO-TEXT -->
+                  	<h3>Seo текст<h3>
+                  	<p>Разнообразный и богатый опыт укрепление и развитие структуры влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Разнообразный и богатый опыт реализация намеченных плановых заданий играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям. Товарищи! дальнейшее развитие различных форм деятельности представляет собой интересный эксперимент проверки позиций, занимаемых участниками в отношении поставленных задач. Задача организации, в особенности же консультация с широким активом влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Товарищи! рамки и место обучения кадров влечет за собой процесс внедрения и модернизации направлений прогрессивного развития.</p>
+                  	<!-- END SEO-TEXT -->
+                </div>
+              </div>
+          </div>
+		</main>
+		
+		<footer class="footer">
+			<div class="container-fluid">
+				<div class="row align-items-center justify-content-around">
+					<div class="col-md-9">
+						<ul class="footer_list">
+							<li class="footer_list-item"><a href="/no-page.html">Политиика конфиденциальности</a></li>
+							<li class="footer_list-item"><a href="no-page.html">Пользовательское соглашение</a></li>
+							<li class="footer_list-item"><a href="no-page.html">Обработка данных</a></li>
+							<li class="footer_list-item"><a href="about.html">О журнале</a></li>
+							<li class="footer_list-item"><a href="contacts.html">Контакты</a></li>
+						</ul>
+					</div>
+					<div class="col-12 col-md text-right">
+						<p class="footer_copyright">© 2019 Все права защищены.</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="./js/main.js" defer></script>
+	</body>
+</html>
