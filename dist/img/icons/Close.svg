@@ -1,1 +1,20 @@
-<svg width="19" height="17" viewBox="0 0 19 17" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="header-mobile" transform="translate(-255 -16)" fill="#FFF"><g transform="translate(10 11)" id="Top-Navigation"><g id="Close" transform="translate(245 4.5)"><g id="Rectangle"><path transform="rotate(45 9.5 9)" d="M-1.476 7.976l22.024-.595-.072 2.643-22.024.595z"/><path transform="rotate(-45 9.5 9)" d="M-1.548 7.381l22.024.595.072 2.643-22.024-.595z"/></g></g></g></g></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="17px" viewBox="0 0 19 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>Close</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="header-mobile" transform="translate(-255.000000, -16.000000)" fill="#FFFFFF">
+            <g transform="translate(0.000000, -1.000000)" id="Top-Navigation">
+                <g transform="translate(10.000000, 12.000000)">
+                    <g id="Close" transform="translate(245.000000, 4.500000)">
+                        <g id="Rectangle">
+                            <polygon transform="translate(9.500000, 9.000000) rotate(-315.000000) translate(-9.500000, -9.000000) " points="-1.47619048 7.97619048 20.547619 7.38095238 20.4761905 10.0238095 -1.54761905 10.6190476"></polygon>
+                            <polygon transform="translate(9.500000, 9.000000) rotate(-45.000000) translate(-9.500000, -9.000000) " points="-1.54761905 7.38095238 20.4761905 7.97619048 20.547619 10.6190476 -1.47619048 10.0238095"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

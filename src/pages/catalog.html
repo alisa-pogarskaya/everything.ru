@@ -8,112 +8,68 @@
 	</head>
 	<body>
 		//= ../blocks/header/header.html
-		<main class="container-fluid main">
-			<section class="section-block">
-				<div class="row">
-					<div class="col">
-						<h1>Контакты</h1>
-					</div>
-				</div>
-			</section>
-			//= ../blocks/sorting/sorting.html
-			<div class="container">
-            	<div class="row justify-content-center">
-                	<div class="col-md-4">
-                  		<!-- BEGIN MENU -->
-                  		<ul class="menu-sorting menu-sorting--margin">
-		                    <li class="menu-sorting__item menu-sorting__item-first">
-		                      <a class="menu-sorting__link menu-sorting__item-link" href="#">Все рубрики<span class="menu-sorting__icon"></span></a>
-		                    </li>
-		                    <li class="menu-sorting__item menu-sorting__item--active">
-		                      <a class="menu-sorting__link" href="#">Авто и мото</a>
-		                    </li>
-		                    <li class="menu-sorting__item">
-		                      <a class="menu-sorting__link" href="#">Бытовая техника</a>
-		                    </li>
-		                    <li class="menu-sorting__item">
-		                      <a class="menu-sorting__link" href="#">Дача, сад, огород</a>
-		                    </li>
-		                    <li class="menu-sorting__item">
-		                      <a class="menu-sorting__link" href="#">Детские товары</a>
-		                    </li>
-		                    <li class="menu-sorting__item">
-		                      <a class="menu-sorting__link" href="#">Здоровье</a>
-		                    </li>
-		                    <li class="menu-sorting__item">
-		                      <a class="menu-sorting__link" href="#">Компьютеры</a>
-		                    </li>
-		                    <li class="menu-sorting__item">
-		                      <a class="menu-sorting__link" href="#">Красота</a>
-		                    </li>
-		                    <li class="menu-sorting__item">
-		                      <a class="menu-sorting__link" href="#">Одежда и аксессуары</a>
-		                    </li>
-		                    <li class="menu-sorting__item">
-		                      <a class="menu-sorting__link" href="#">Ремонт и недвижимость</a>
-		                    </li>
-		                    <li class="menu-sorting__item">
-		                      <a class="menu-sorting__link" href="#">Спорт и фитнес</a>
-		                    </li>
-		                    <li class="menu-sorting__item">
-		                      <a class="menu-sorting__link" href="#">Товары для дома</a>
-		                    </li>
-		                    <li class="menu-sorting__item">
-		                      <a class="menu-sorting__link" href="#">Туризм</a>
-		                    </li>
-		                    <li class="menu-sorting__item">
-		                      <a class="menu-sorting__link" href="#">Хобби</a>
-		                    </li>
-		                    <li class="menu-sorting__item">
-		                      <a class="menu-sorting__link" href="#">Электроника</a>
-		                    </li>
-                  		</ul>
-                	</div>
-
-                <div class="col-md-12">
-                	<div class="row">
-	                    <div class="col">
-							//= ../blocks/cart-grid/cart-grid.html
-	                    </div>
-	                    <div class="col">
-							//= ../blocks/cart-grid/cart-grid.html
-	                    </div>
-	                    <div class="col">
-							//= ../blocks/cart-grid/cart-grid.html
-	                    </div>
-                	</div>
-                	<div class="row">
-	                    <div class="col">
-							//= ../blocks/cart-grid/cart-grid.html
-	                    </div>
-	                    <div class="col">
-							//= ../blocks/cart-grid/cart-grid.html
-	                    </div>
-	                    <div class="col">
-							//= ../blocks/cart-grid/cart-grid.html
-	                    </div>
-                	</div>
-                	<div class="row">
-	                    <div class="col">
-							//= ../blocks/cart-grid/cart-grid.html
-	                    </div>
-	                    <div class="col">
-							//= ../blocks/cart-grid/cart-grid.html
-	                    </div>
-	                    <div class="col">
-							//= ../blocks/cart-grid/cart-grid.html
-	                    </div>
-                  	</div>
-
-                  	//= ../blocks/paginate/paginate.html
-
-                	<!-- BEGIN SEO-TEXT -->
-                  	<h3>Seo текст<h3>
-                  	<p>Разнообразный и богатый опыт укрепление и развитие структуры влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Разнообразный и богатый опыт реализация намеченных плановых заданий играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям. Товарищи! дальнейшее развитие различных форм деятельности представляет собой интересный эксперимент проверки позиций, занимаемых участниками в отношении поставленных задач. Задача организации, в особенности же консультация с широким активом влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Товарищи! рамки и место обучения кадров влечет за собой процесс внедрения и модернизации направлений прогрессивного развития.</p>
-                  	<!-- END SEO-TEXT -->
+		<main class="container main">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <section class="section-block">
+                        <div class="row">
+                            <div class="col">
+                                <h1>Категории</h1>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="row">
+                            <div class="col-md-4">
+                            //= ../blocks/menu-catalog/menu-catalog.html
+                            </div>
+                            <div class="col-md-8">
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 no-padding">
+                                        //= ../blocks/sorting/sorting.html
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6">
+                                        //= ../blocks/cart-main/cart-main.html
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6">
+                                        //= ../blocks/cart-main/cart-main.html
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6">
+                                        //= ../blocks/cart-main/cart-main.html
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6">
+                                        //= ../blocks/cart-main/cart-main.html
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6">
+                                        //= ../blocks/cart-main/cart-main.html
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6">
+                                        //= ../blocks/cart-main/cart-main.html
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6">
+                                        //= ../blocks/cart-main/cart-main.html
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6">
+                                        //= ../blocks/cart-main/cart-main.html
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6">
+                                        //= ../blocks/cart-main/cart-main.html
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        //= ../blocks/paginate/paginate.html
+                                        <!-- BEGIN SEO-TEXT -->
+                                        <h3>Seo текст</h3>
+                                        <p>Разнообразный и богатый опыт укрепление и развитие структуры влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Разнообразный и богатый опыт реализация намеченных плановых заданий играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям. Товарищи! дальнейшее развитие различных форм деятельности представляет собой интересный эксперимент проверки позиций, занимаемых участниками в отношении поставленных задач. Задача организации, в особенности же консультация с широким активом влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Товарищи! рамки и место обучения кадров влечет за собой процесс внедрения и модернизации направлений прогрессивного развития.</p>
+                                        <!-- END SEO-TEXT -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
-              </div>
-          </div>
+            </div>
 		</main>
 		//= ../blocks/main/main.html
 		//= ../blocks/footer/footer.html

@@ -12,7 +12,7 @@
 		&_number {
 		position: absolute;
 		top: -30px;
-		left: 40%;
+		left: 37%;
 		display: block;
 		width: 42px;
 		height: 42px;
@@ -37,6 +37,24 @@
 		}
 		&_text {
 			text-align: center;
-			padding: 15% 10% 10% 10%;
+			padding: 20% 10% 10% 10%;
 		}
+}
+
+@media (max-width: 768px) {
+	.numbered-text-block_number {
+		left: 37%;
+	}
+}
+
+@media (max-width: 575px) {
+	.numbered-text-block_number {
+		left: 45%;
+	}
+}
+
+@media (max-width: 320px) {
+	.numbered-text-block_number {
+		left: 37%;
+	}
 }

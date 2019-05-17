@@ -9,8 +9,61 @@ $gray-black: #212121;
 $gray: #5F6266;
 $gray-1: #888A8D;
 $light-gray: #cecece;
+
 $bleu: #5257F2;
 $pink: #FF507C;
+$light-pink: #EE8FFA;
+$orange: #F96D29;
+$yellow: #FFBF68;
+$green: #6BEFD0;
+
+.bleu {
+	background: $bleu;
+}
+
+.pink {
+	background: $pink;
+}
+
+.light-pink {
+	background: $light-pink;
+}
+
+.orange {
+	background: $orange;
+}
+
+.yellow {
+	background: $yellow;
+}
+
+.green {
+	background: $green;
+}
+
+.bleu-text {
+	color: $bleu;
+}
+
+.pink-text {
+	color: $pink;
+}
+
+.light-pink-text {
+	color: $light-pink;
+}
+
+.orange-text {
+	color: $orange;
+}
+
+.yellow-text {
+	color: $yellow;
+}
+
+.green-text {
+	color: $green;
+}
 
 body {
 	font-family: $font-stack;
@@ -42,6 +95,18 @@ h1, .h1 {
 	font-weight: bold;
 	font-size: 40px;
 	line-height: 46px;
+}
+
+@media (max-width: 768px) {
+	h1, .h1 {	
+	  	font-family: Ubuntu;
+	  	font-size: 22px;
+	  	font-weight: bold;
+	  	font-style: normal;
+	  	font-stretch: normal;
+	  	line-height: normal;
+	  	letter-spacing: normal;
+	}
 }
 
 h2, .h2 {
@@ -80,6 +145,16 @@ p, .p {
 	line-height: 18px;
 }
 
+.p-cont {
+	width: 80%;
+}
+
+@media (max-width: 991px) {
+	.p-cont {
+		width: 100%;
+	}
+}
+
 .link {
 	text-decoration: none;
 	cursor: pointer;
@@ -94,7 +169,7 @@ img {
 }
 
 .text-col-2 {
-	margin: 20px 0px;
+	margin-bottom: 20px;
 	vertical-align: top;
 	width: 100%;
 	column-count: 2;
@@ -111,6 +186,10 @@ img {
 	margin: 0px;
 }
 
+.no-padding {
+	padding: 0;
+}
+
 .padding-left {
 	padding-left: 70px;
 }
@@ -118,5 +197,15 @@ img {
 @media (max-width: 1200px) {
 	.padding-left {
 	padding-left: 0px;
+	}
+}
+
+.margin-bottom {
+	margin-bottom: 30px;
+}
+
+@media (max-width: 1200px) {
+	.margin-bottom {
+		margin-bottom: 20px;
 	}
 }
