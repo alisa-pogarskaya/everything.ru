@@ -1232,6 +1232,16 @@ p, .p {
 .p-cont {
   width: 80%; }
 
+time {
+  font-family: Ubuntu;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #cecece; }
+
 .link {
   text-decoration: none;
   cursor: pointer; }
@@ -1254,6 +1264,10 @@ img {
 
 .no-padding {
   padding: 0; }
+
+.no-margin {
+  margin: 0;
+  margin-top: 0; }
 
 .padding-left {
   padding-left: 70px; }
@@ -1632,6 +1646,9 @@ img {
     background: linear-gradient(270deg, #FFA50E -22.83%, #F65335 65.12%);
     box-shadow: inset 0px 1px 4px rgba(213, 52, 26, 0.2);
     border-radius: 3px; }
+
+.cart-main_info--no-margin {
+  margin-top: 0; }
 
 .cart-image {
   position: relative;

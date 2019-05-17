@@ -22,6 +22,8 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	</head>
 	<body>
+		<!-- BEGIN HEADER -->
+		
 		<header class="header">
 			<!-- шапка -->
 		  	<div class="container">
@@ -35,11 +37,15 @@
 			  			<!-- BEGIN MAIN-MENU -->
 			  			
 			  			<nav class='main-menu_wrapper' id='navigation-menu'>
+			  			    <!-- BEGIN BUTTON-HAMBURGER -->
+			  			    
 			  			    <button class="button-hamburger" type="button" data-toggle="navigation-menu" aria-label="Меню">
 			  			        <span class="button-hamburger__wrap">
 			  			            <span class="button-hamburger__inner"></span>
 			  			        </span>
 			  			    </button>
+			  			    
+			  			    <!-- END BUTTON-HAMBURGER -->
 			  			    <ul class="main-menu">
 			  			        <li class="main-menu_item">
 			  			            <a href="catalog.html">Hi-Tech</a>
@@ -89,11 +95,15 @@
 			  			<!-- END MAIN-MENU -->
 					</div>
 			  		<div class="col text-right">
+						<!-- BEGIN BUTTON-HAMBURGER -->
+						
 						<button class="button-hamburger" type="button" data-toggle="navigation-menu" aria-label="Меню">
 						    <span class="button-hamburger__wrap">
 						        <span class="button-hamburger__inner"></span>
 						    </span>
 						</button>
+						
+						<!-- END BUTTON-HAMBURGER -->
 						<button type="button" class='header_search' data-header="search">
 							<img src="../img/icons/Search.svg" alt="search" width="16px" height="16px">
 						</button>
@@ -107,45 +117,58 @@
 				</div>
 		  	</div>
 		</header>
-		<main class="container-fluid main">
-			<section class="section-block">
-				<div class="row">
-					<div class="col">
-						<h1>Контакты</h1>
-					</div>
+		
+		<!-- END HEADER -->
+		<main class="container main">
+			<div class="row row justify-content-center">
+				<div class="col-lg-10">
+					<section class="section-block">
+						<div class="row">
+							<div class="col">
+								<h1>Название статьи</h1>
+							</div>
+						</div>
+					</section>
+					<section class="section-block">
+						<div class="row align-items-center">
+							<div class="col-1"><time datetime="2018-04-23">23.04.2018</time></div>
+							<div class="col-1">
+								<footer class="cart-main_info cart-main_info--no-margin">
+									<img src="img/icons/16px/Eye.svg" alt="eye" width="24px" height="24px">
+									<span>1289</span>
+								</footer>
+							</div>
+						</div>
+					</section>
+					<section class="section-block">
+						<div class="row">
+							<div class="col">
+								
+							</div>
+						</div>
+					</section>
+					<section class="section-block">
+						<div class="row">
+							<div class="col">
+								
+							</div>
+						</div>
+					</section>
+					<section class="section-block">
+						<div class="row">
+							<div class="col-12 col-lg-7">
+								1
+							</div>
+							<div class="col-12 col-lg-5">
+								2
+							</div>
+						</div>
+					</section>
 				</div>
-				<div class="row">
-					<div class="col">
-					<h3>Адрес:</h3>
-					<p>
-						г. Санкт-Петербург, ул. Невская 125, офис 32.
-					</p>
-					<p>
-						С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации дальнейших направлений развития. Значимость этих проблем настолько очевидна, что рамки и место обучения кадров способствует подготовки и реализации направлений прогрессивного развития. Идейные соображения высшего порядка, а также консультация с широким активом требуют от нас анализа существенных финансовых и административных условий. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности требуют определения и уточнения направлений прогрессивного развития.
-					</p>
-					</div>
-					<div class="col">
-						<h3>Форма обратной связи</h3>
-						<form id="application" action="application.php" method="POST" name="application">
-
-							<span>Имя</span>
-							<input name="name" id="zayavkaName" maxlength="20" placeholder="Введите ваше имя*" required />
-
-							<span>Email</span>
-							<input name="email" type="email" id="applicationEmail" maxlength="20" placeholder="Введите ваш E-mail*" required />
-
-							<span>Сообщение</span>
-							<textarea id="msg" class="txtarea" name="msg" placeholder="Ваше сообщение:"></textarea>
-							<div class="moreOption">
-							    <input class="adapt" type="checkbox" name="adapt[]" value="Нужна адаптивность"/>
-							    <span>Ознакомлен с политикой обработки персональных данных </span>
-							</div> 
-							<button class="applicationButton" type="submit" form="application">Отправить</button>
-						</form>
-					</div>
-				</div>
-			</section>
+			</div>
 		</main>
+		
+		<!-- BEGIN FOOTER -->
 		
 		<footer class="footer">
 			<div class="container-fluid">
@@ -165,6 +188,8 @@
 				</div>
 			</div>
 		</footer>
+		
+		<!-- END FOOTER -->
 		<script src="./js/main.js" defer></script>
 	</body>
 </html>
