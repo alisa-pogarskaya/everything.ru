@@ -1,0 +1,59 @@
+.article-carousel {
+    &_for {
+        display: none;
+
+        @media(min-width: map-get($grid-breakpoints, lg)) {
+            display: block;
+            margin-bottom: 30px;
+
+            &_item {
+                font-size: 0;
+    
+                img {
+                    max-height: 535px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    &_nav {
+        padding-left: 30px;
+        padding-right: 30px;
+
+        @media(min-width: map-get($grid-breakpoints, lg)) {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        .slick-list {
+            margin-left: -13px;
+            margin-right: -13px;
+        }
+
+        &_item {
+            padding-left: 13px;
+            padding-right: 13px;
+        }
+
+        .slide_prev,
+        .slide_next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: auto;
+            height: auto;
+            background-color: transparent;
+        }
+        .slide_prev {
+            left: 0;
+        }
+        .slide_next {
+            right: 0;
+
+            svg {
+                transform: rotate(180deg)
+            }
+        }
+    }
+}
