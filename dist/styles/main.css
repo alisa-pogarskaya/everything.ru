@@ -1488,6 +1488,33 @@ img {
   .main-menu_wrapper .button-hamburger {
     display: none; }
 
+.article-carousel_for {
+  display: none; }
+
+.article-carousel_nav {
+  padding-left: 30px;
+  padding-right: 30px; }
+  .article-carousel_nav .slick-list {
+    margin-left: -13px;
+    margin-right: -13px; }
+  .article-carousel_nav_item {
+    padding-left: 13px;
+    padding-right: 13px; }
+  .article-carousel_nav .slide_prev,
+  .article-carousel_nav .slide_next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    height: auto;
+    background-color: transparent; }
+  .article-carousel_nav .slide_prev {
+    left: 0; }
+  .article-carousel_nav .slide_next {
+    right: 0; }
+    .article-carousel_nav .slide_next svg {
+      transform: rotate(180deg); }
+
 .cart-carousel {
   margin-top: 10px;
   margin-bottom: 10px; }
@@ -2137,13 +2164,6 @@ input[type="checkbox"]:checked + label span {
     text-align: center; }
     .social__item i:hover {
       color: #5F6266; }
-    @media screen and (max-widht: 480px) {
-  .cart-image {
-    width: 100px;
-    height: 200px; }
-    .cart-image_image {
-      height: 200px;
-      widht: 100px; } }
     @media (min-width: 576px) {
     .container {
       max-width: 540px; }
@@ -3537,6 +3557,17 @@ input[type="checkbox"]:checked + label span {
         .main-menu_sub .main-menu_item:hover > .main-menu_sub {
           transform: translate(0, 0);
           margin-top: 0; }
+    .article-carousel_for {
+      display: block;
+      margin-bottom: 30px; }
+      .article-carousel_for_item {
+        font-size: 0; }
+        .article-carousel_for_item img {
+          max-height: 535px;
+          object-fit: cover; }
+    .article-carousel_nav {
+      padding-left: 50px;
+      padding-right: 50px; }
         .cart-carousel .slide_prev .fas,
         .cart-carousel .slide_next .fas {
           width: 36px;
@@ -4094,6 +4125,13 @@ input[type="checkbox"]:checked + label span {
     left: 37%; }
   .menu-sorting__link {
     margin: 0 auto; } }
+    @media screen and (max-widht: 480px) {
+  .cart-image {
+    width: 100px;
+    height: 200px; }
+    .cart-image_image {
+      height: 200px;
+      widht: 100px; } }
     @media screen and (max-width: 768px) {
   .footer {
     margin-top: 80px;
