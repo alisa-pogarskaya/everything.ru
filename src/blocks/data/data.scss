@@ -1,0 +1,31 @@
+.data-cont {
+	margin-bottom: 30px;
+	&__time {
+		height: auto;
+		display: inline-block;
+		margin-right: 35px;
+	}
+	&__autor {
+		margin-top: 4px;
+		height: 100%;
+		font-family: Ubuntu;
+		font-size: 12px;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.33;
+		letter-spacing: normal;
+		color: #1a051d;
+		text-transform: uppercase;
+	}
+}
+
+@media (max-width: 768px) {
+	.data-cont {
+		margin-bottom: 20px;
+			&__time {
+				margin-right: 23px;
+				margin-bottom: 10px;
+			}
+	}
+}

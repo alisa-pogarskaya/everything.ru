@@ -1,0 +1,90 @@
+/* BEGIN BLOCK-PLUS-MINUS */
+
+.plus-minus-cont {
+	width: auto;
+  	height: auto;
+  	margin: 30px 0px;
+  	padding: 5% 5% 5% 5%;
+  	border-radius: 5px;
+  	box-shadow: 0 2px 20px 0 rgba(239, 239, 239, 0.8);
+  	background-color: $white;
+}
+
+@media (max-width: 768px) {
+	.plus-minus-cont {
+	  	margin: 10px 0px;
+	}
+}
+
+.plus-minus {
+  	counter-reset: li;
+  	list-style: none;
+  	font-family: Ubuntu;
+ 	font-size: 14px;
+  	font-weight: bold;
+  	font-style: normal;
+  	font-stretch: normal;
+  	line-height: 1.64;
+  	letter-spacing: normal;
+  	padding: 0;
+  	width: 100%; 
+	&__link {
+	  	position: relative;
+	  	display: block;
+	  	padding: .3em .3em .3em 4em;
+	  	margin: .5em 0;
+	  	color: $gray;
+	  	text-decoration: none;
+	  	border-radius: .3em;
+	  	transition: all .3s ease-out;
+	  	font-family: Ubuntu;
+	  	font-size: 14px;
+	  	font-weight: bold;
+	  	font-style: normal;
+	  	font-stretch: normal;
+	  	line-height: 1.64;
+	  	letter-spacing: normal;
+	  	text-decoration: none;
+		&:before {
+			content: '+';
+			counter-increment: li;
+			position: absolute;
+			left: 0em;
+			top: 50%;
+			margin-top: -1em;
+			background: $green;
+			height: 2em;
+			width: 2em;
+			border: 10px solid $white;
+			border-radius: 2em; 
+			color: $white;
+			line-height: 1em;
+			text-align: center;
+			font-family: Ubuntu;
+  			font-size: 22px;
+  			font-weight: bold;
+  			font-style: normal;
+  			font-stretch: normal;
+  			letter-spacing: normal;
+  			text-align: center;
+  			box-shadow: 0 2px 11px 0 #f5f5f6;
+			}
+	}
+	&__link--minus {
+		&:before {
+		content: '-';
+		background: $orange;
+		}
+	}
+	&__title {
+		margin: 15px 0px 35px 0px;
+	}
+}
+
+@media (max-width: 768px) {
+	.plus-minus__link {
+		font-size: 12px;
+	}
+}
+
+/* END BLOCK-PLUS-MINUS */

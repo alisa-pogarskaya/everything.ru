@@ -1,0 +1,84 @@
+/* BEGIN TABLE */
+
+.table__cont {
+	overflow-x: scroll; 
+}
+
+.table {
+	width: 100%;
+	margin: 30px 0px 48px 0px;
+	border-spacing: 0px;
+	font-family: Ubuntu;
+  	font-size: 12px;
+  	font-weight: normal;
+  	font-style: normal;
+  	font-stretch: normal;
+  	line-height: 1.33;
+  	letter-spacing: normal;
+  	color: #1a051d;
+  	border-bottom: 2px solid #EDEDED; 
+}
+
+@media (max-width: 768px) {
+	.table {
+		margin: 20px 0px 26px 0px; } 
+	}
+
+.table__header {
+	padding: 15px 0px;
+	font-family: Ubuntu;
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.33;
+	letter-spacing: normal;
+	color: #1a051d;
+	text-transform: uppercase;
+	text-align: left;
+	border-top: 3px solid #EDEDED;
+	border-bottom: 3px solid #EDEDED; 
+}
+
+.table__header--width-1 {
+	min-width: 200px;
+}
+
+.table__header--width-2 {
+	min-width: 100px;
+}
+
+.table__header--width-3 {
+	min-width: 200px;
+}
+
+.table__header--width-4 {
+	min-width: 50px;
+}
+
+.table__col {
+	/*min-width: 200px;*/
+	padding: 15px 0px;
+	border-bottom: 1px solid #EDEDED; 
+	& a {
+		color: #1a051d;
+	}
+}
+
+.table__decor {
+	font-size: 15px;
+	font-weight: normal;
+  	font-style: normal;
+  	font-stretch: normal;
+  	line-height: 1.33;
+  	letter-spacing: normal;
+  	color: $bleu;
+	text-transform: uppercase; 
+}
+
+@media screen and (max-width: 320px) {
+	.table {
+		margin: 30px 10px 48px 10px; } 
+	}
+
+/* END TABLE */

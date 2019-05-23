@@ -1,0 +1,60 @@
+/* BEGIN ALERTS */
+
+.alerts {
+	width: 100%;
+  	height: auto;
+  	margin: 10px 0px;
+  	border-radius: 4px;
+  	&__title {
+  		display: inline-block;
+  		width: 100%;
+  		height: auto;
+  		padding: 15px 0px;
+  		margin: 0 auto;
+		font-family: Ubuntu;
+	  	font-size: 11px;
+	  	font-weight: bold;
+	  	font-style: normal;
+	  	font-stretch: normal;
+	  	line-height: 1.18;
+	  	letter-spacing: 0.1px;
+	  	text-align: center;
+	  	color: $gray;
+	  	text-transform: uppercase;
+  	}
+}
+
+.alerts--bleu {
+	background-color: #d5e9fa;
+}
+
+.alerts--red {
+	background-color: #fbe4e8;
+}
+
+.alerts--green {
+	background-color: #d5f2ea;
+}
+
+.alerts--yellow {
+	background-color: #fff8e7;
+}
+
+
+.alerts--title-bleu {
+	color: #0084f4;
+}
+
+.alerts--title-red {
+	color: #ff647c;
+}
+
+.alerts--title-green {
+	color: #00c48c;
+}
+
+.alerts--title-yellow {
+	color: #ffcf5c;
+}
+
+/* END ALERTS */

@@ -29,12 +29,16 @@
 		font-size: 13px;
 		line-height: 18px;
 		color: $gray;
+		text-align: right;
 	}	
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
 	.footer {
 	margin-top: 80px;
 	padding: 20px;
+		&_copyright {
+			text-align: left;
+		}
 	}
 }

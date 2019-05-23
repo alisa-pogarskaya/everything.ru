@@ -41,6 +41,10 @@ $green: #6BEFD0;
 	background: $green;
 }
 
+.gray-text {
+	color: $gray;
+}
+
 .bleu-text {
 	color: $bleu;
 }
@@ -127,6 +131,35 @@ h3, .h3 {
 	color: $gray-black;
 }
 
+h4, .h4 {
+	font-family: Ubuntu;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 20px;
+	color: $gray-black;
+}
+
+.section-paragrafe {
+	margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+	.section-paragrafe {
+		margin-bottom: 15px;
+	}
+}
+
+.title-page {
+	margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+	.title-page {
+		margin-bottom: 0px;
+	}
+}
+
 .subtitle {
 	color: $light-gray;
 	font-family: Ubuntu;
@@ -145,6 +178,18 @@ p, .p {
 	line-height: 18px;
 }
 
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-center {
+	text-align: center;
+}
+
 .p-cont {
 	width: 80%;
 }
@@ -153,6 +198,31 @@ p, .p {
 	.p-cont {
 		width: 100%;
 	}
+}
+
+.section-block {
+	margin: 30px 0px;
+}
+
+@media (max-width: 991px) {
+	.section-block {
+		margin: 21px 0px 10px 0px;
+	}
+}
+
+.link {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+img {
+	width: 100%;
+}
+
+.img-responsive {
+	max-width: 500px;
+	width: 100%;
+	height: auto;
 }
 
 time {
@@ -166,13 +236,33 @@ time {
   	color: $light-gray;
 }
 
-.link {
-	text-decoration: none;
-	cursor: pointer;
+hr {
+	color: $light-gray;
+    background-color: $light-gray;
+    border: 0px none;
+    height: 2px;
+    clear: both;
+    margin: 60px 0px;
 }
 
-img {
-	width: 100%;
+@media (max-width: 991px) {
+	hr {
+	    margin: 40px 0px;
+	}
+}
+
+.hr {
+	color: $light-gray;
+    background-color: $light-gray;
+    border: 0px none;
+    height: 1px;
+    margin: 30px 0px;
+    clear: both;
+}
+
+.hr-title {
+	padding-bottom: 9px;
+    border-bottom: 1px solid $light-gray;
 }
 
 .main {
@@ -225,3 +315,6 @@ img {
 		margin-bottom: 20px;
 	}
 }
+
+/* Other elements */
+
