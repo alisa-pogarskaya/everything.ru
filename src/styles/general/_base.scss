@@ -1,45 +1,239 @@
-/* Global font */
+/* --- Global font --- */
 
 $font-stack: 'Ubuntu', sans-serif;
 
-/* Global color */
+/* --- Global color --- */
 
-$white: #ffffff;
+/* neutral color*/
+
 $gray-black: #212121;
 $gray: #5F6266;
 $gray-1: #888A8D;
-$light-gray: #cecece;
+$light-gray: #CECECE;
+$light-gray-1: #F7F5F9;
+$white: #FFFFFF;
+
+/* bleu */
 
 $bleu: #5257F2;
-$pink: #FF507C;
-$light-pink: #EE8FFA;
-$orange: #F96D29;
-$yellow: #FFBF68;
+$bleu-75: #9195FF;
+$bleu-25: #E0E1FF;
+
+/* green */
+
 $green: #6BEFD0;
+$green-75: #9FFCE6;
+$green-25: #c0fff0;
+
+/* orange */
+
+$orange: #F96D29;
+$orange-75: #FF9764;
+$orange-25: #FFBFA0;
+
+/* yellow */
+
+$yellow: #FFBF68;
+$yellow-75: #FFDDAF;
+$yellow-25: #FFEED8;
+
+/* pink */
+
+$pink: #FF507C;
+$pink-75: #FF88A6;
+$pink-25: #FFB1C5;
+
+/* light-pink */
+
+$light-pink: #EE8FFA;
+$light-pink-75: #F7BAFF;
+$light-pink-25: #FBDBFF;
+
+/* semantic color */
+
+$yellow-semantic: #FFCF5C;
+$yellow-semantic-75: #FFE29D;
+$yellow-semantic-25: #FFCF5C;
+
+$orange-semantic: #FFA26B;
+$orange-semantic-75: #FFC7A6;
+$orange-semantic-25: #FFE8DA;
+
+$bleu-semantic: #0084F4;
+$bleu-semantic-75: #66B5F8;
+$bleu-semantic-25: #D5E9FA;
+
+$green-semantic: #00C48C;
+$green-semantic-75: #7DDFC3;
+$green-semantic-25: #D5F2EA;
+
+$red-semantic: #FF647C;
+$red-semantic-75: #FDAFBB;
+$red-semantic-25: #FBE4E8;
+
+.yellow-semantic {
+	background: $yellow-semantic;
+}
+
+.yellow-semantic-75 {
+	background: $yellow-semantic-75;
+}
+
+.yellow-semantic-25 {
+	background: $yellow-semantic-25;
+}
+
+.orange-semantic {
+	background: $orange-semantic;
+}
+
+.orange-semantic-75 {
+	background: $orange-semantic-75;
+}
+
+.orange-semantic-25 {
+	background: $orange-semantic-25;
+}
+
+.bleu-semantic {
+	background: $bleu-semantic;
+}
+
+.bleu-semantic-75 {
+	background: $bleu-semantic-75;
+}
+
+.bleu-semantic-25 {
+	background: $bleu-semantic-25;
+}
+
+.green-semantic {
+	background: $green-semantic;
+}
+
+.green-semantic-75 {
+	background: $green-semantic-75;
+}
+
+.green-semantic-25 {
+	background: $green-semantic-25;
+}
+
+.red-semantic {
+	background: $red-semantic;
+}
+
+.red-semantic-75 {
+	background: $red-semantic-75;
+}
+
+.red-semantic-25 {
+	background: $red-semantic-25;
+}
+
+/* class color */
 
 .bleu {
 	background: $bleu;
 }
 
-.pink {
-	background: $pink;
+.bleu-75 {
+	background: $bleu-75;
 }
 
-.light-pink {
-	background: $light-pink;
+.bleu-25 {
+	background: $bleu-25;
+}
+
+.green {
+	background: $green;
+}
+
+.green-75 {
+	background: $green-75;
+}
+
+.green-25 {
+	background: $green-25;
 }
 
 .orange {
 	background: $orange;
 }
 
+.orange-75 {
+	background: $orange-75;
+}
+
+.orange-25 {
+	background: $orange-25;
+}
+
 .yellow {
 	background: $yellow;
 }
 
-.green {
-	background: $green;
+.yellow-75 {
+	background: $yellow-75;
 }
+
+.yellow-25 {
+	background: $yellow-25;
+}
+
+.pink {
+	background: $pink;
+}
+
+.pink-75 {
+	background: $pink-75;
+}
+
+.pink-25 {
+	background: $pink-25;
+}
+
+.light-pink {
+	background: $light-pink;
+}
+
+.light-pink-75 {
+	background: $light-pink-75;
+}
+
+.light-pink-25 {
+	background: $light-pink-25;
+}
+
+.gray-black {
+	background: $gray-black;
+}
+
+.gray {
+	background: $gray;
+}
+
+.gray-1 {
+	background: $gray-1;
+}
+
+.light-gray {
+	background: $light-gray;
+}
+
+.light-gray-1 {
+	background: $light-gray-1;
+}
+
+.white {
+	background: $white;
+}
+
+.gradient {
+	  background: linear-gradient(to left, #FFa50E, #F65335);
+}
+
+/* Text color */
 
 .gray-text {
 	color: $gray;
@@ -69,24 +263,9 @@ $green: #6BEFD0;
 	color: $green;
 }
 
-body {
-	font-family: $font-stack;
-	font-size: 16px;
-	width: 100%;
-	height: 100%;
-	/*position: fixed;
-	display: inline-flex;
-	flex-direction: row-reverse;
-	align-items: center;
-	justify-content: center;*/
-}
-
-.main-mini {
-	margin: 0 auto;
-	width: 980px;
-}
-
 /* Typografica */
+
+/* main */
 
 h1, h2, h3, h4, h5, h6, ul {
 	padding: 0;
@@ -94,7 +273,7 @@ h1, h2, h3, h4, h5, h6, ul {
 }
 
 h1, .h1 {	
-	font-family: Ubuntu;
+	font-family: $font-stack;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 40px;
@@ -103,7 +282,7 @@ h1, .h1 {
 
 @media (max-width: 768px) {
 	h1, .h1 {	
-	  	font-family: Ubuntu;
+	  	font-family: $font-stack;
 	  	font-size: 22px;
 	  	font-weight: bold;
 	  	font-style: normal;
@@ -114,7 +293,7 @@ h1, .h1 {
 }
 
 h2, .h2 {
-	font-family: Ubuntu;
+	font-family: $font-stack;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 34px;
@@ -123,7 +302,7 @@ h2, .h2 {
 }
 
 h3, .h3 {
-	font-family: Ubuntu;
+	font-family: $font-stack;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 17px;
@@ -132,13 +311,110 @@ h3, .h3 {
 }
 
 h4, .h4 {
-	font-family: Ubuntu;
+	font-family: $font-stack;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 15px;
 	line-height: 20px;
 	color: $gray-black;
 }
+
+.subtitle {
+	color: $light-gray;
+	font-family: $font-stack;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 14px;/* identical to box height */
+}
+
+.button-1 {
+	font-family: $font-stack;
+  	font-size: 17px;
+  	font-weight: bold;
+  	font-style: normal;
+  	font-stretch: normal;
+  	line-height: 1.29;
+  	letter-spacing: normal;
+  	color: #1a051d;
+} 
+
+.button-2 {
+	font-family: $font-stack;
+  	font-size: 13px;
+  	font-weight: bold;
+  	font-style: normal;
+  	font-stretch: normal;
+  	line-height: 1.38;
+  	letter-spacing: normal;
+  	color: #1a051d;
+} 
+
+.caption-1 {
+	font-family: $font-stack;
+  	font-size: 12px;
+  	font-weight: normal;
+  	font-style: normal;
+  	font-stretch: normal;
+  	line-height: 1.33;
+  	letter-spacing: normal;
+  	color: #1a051d;
+}
+
+.caption-2 {
+	font-family: $font-stack;
+  	font-size: 11px;
+  	font-weight: normal;
+  	font-style: normal;
+  	font-stretch: normal;
+  	line-height: 1.18;
+  	letter-spacing: normal;
+  	color: #1a051d;
+}
+
+p, .p {
+	color: $gray;
+	font-family: $font-stack;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 18px;
+}
+
+.body-1 {
+	font-family: $font-stack;
+  	font-size: 15px;
+  	font-weight: normal;
+  	font-style: normal;
+  	font-stretch: normal;
+  	line-height: 1.33;
+  	letter-spacing: normal;
+  	color: #1a051d;
+}
+
+.body-2 {
+	font-family: $font-stack;
+  	font-size: 13px;
+  	font-weight: normal;
+  	font-style: normal;
+  	font-stretch: normal;
+  	line-height: 1.38;
+  	letter-spacing: normal;
+  	color: #5f6266;
+}
+
+.small-text {
+	font-family: $font-stack;
+	font-size: 11px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.18;
+	letter-spacing: normal;
+	color: #1a051d;
+}
+
+/* other typografica */
 
 .section-paragrafe {
 	margin-bottom: 30px;
@@ -158,24 +434,6 @@ h4, .h4 {
 	.title-page {
 		margin-bottom: 0px;
 	}
-}
-
-.subtitle {
-	color: $light-gray;
-	font-family: Ubuntu;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 12px;
-	line-height: 14px;/* identical to box height */
-}
-
-p, .p {
-	color: $gray;
-	font-family: Ubuntu;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 13px;
-	line-height: 18px;
 }
 
 .text-left {
@@ -200,6 +458,20 @@ p, .p {
 	}
 }
 
+/* Main style */
+
+body {
+	font-family: $font-stack;
+	font-size: 16px;
+	width: 100%;
+	height: 100%;
+	/*position: fixed;
+	display: inline-flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: center;*/
+}
+
 .section-block {
 	margin: 30px 0px;
 }
@@ -208,6 +480,11 @@ p, .p {
 	.section-block {
 		margin: 21px 0px 10px 0px;
 	}
+}
+
+.main-mini {
+	margin: 0 auto;
+	width: 980px;
 }
 
 .link {
@@ -226,7 +503,7 @@ img {
 }
 
 time {
-	font-family: Ubuntu;
+	font-family: $font-stack;
  	font-size: 12px;
   	font-weight: normal;
   	font-style: normal;
@@ -317,4 +594,139 @@ hr {
 }
 
 /* Other elements */
+
+.applicationButton {
+	display: inline-block;
+	width: 100%;
+	border-radius: 22px;
+	border: none;
+	background-color: $bleu;
+	padding: 12px 0px;
+	color: $white;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.33;
+	letter-spacing: normal;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: all .3s ease-out;
+	&:hover {
+		transition: all .3s ease-out;
+		background-color: $light-gray; 
+		color: $gray;
+	}
+}
+
+.applicationButton--narrow {
+	padding: 12px 95px;
+}
+
+.applicationButton--disabled {
+	display: inline-block;
+	width: 100%;
+	border-radius: 22px;
+	border: none;
+	background-color: $bleu;
+	padding: 12px 0px;
+	color: $white;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.33;
+	letter-spacing: normal;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: all .3s ease-out;
+	opacity: 0.3;
+}
+
+.applicationButton--hover {
+	display: inline-block;
+	width: 100%;
+	border-radius: 22px;
+	border: none;
+	background-color: $light-gray; 
+	padding: 12px 0px;
+	color: $gray;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.33;
+	letter-spacing: normal;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: all .3s ease-out;
+}
+
+.applicationButtonLine {
+	display: inline-block;
+	width: 100%;
+	border-radius: 22px;
+	border: 2px solid $bleu;
+	background-color: rgba(82, 87, 242, 0.1);
+	padding: 12px 0px;
+	color: $bleu;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.33;
+	letter-spacing: normal;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: all .3s ease-out;
+	&:hover {
+		background-color: rgba(255, 255, 255, 1); 
+	}
+}
+
+.applicationButtonLine--hover {
+	display: inline-block;
+	width: 100%;
+	border-radius: 22px;
+	border: 2px solid $bleu;
+	background-color: rgba(82, 87, 242, 0.1);
+	padding: 12px 0px;
+	color: $bleu;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.33;
+	letter-spacing: normal;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: all .3s ease-out;
+}
+
+.applicationButtonLine--disabled {
+	display: inline-block;
+	width: 100%;
+	border-radius: 22px;
+	border: 2px solid $bleu;
+	background-color: none;
+	padding: 12px 0px;
+	color: $bleu;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.33;
+	letter-spacing: normal;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: all .3s ease-out;
+	opacity: 0.3;
+}
+
 

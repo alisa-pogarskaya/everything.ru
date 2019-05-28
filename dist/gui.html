@@ -1,0 +1,1367 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>gulp-scss-starter</title>
+		<meta name="theme-color" content="#c9e0e04d">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<link rel="shortcut icon" href="./img/favicons/favicon.ico" type="image/x-icon">
+		<link rel="apple-touch-icon" href="./img/favicons/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="57x57" href="./img/favicons/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="./img/favicons/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="./img/favicons/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="./img/favicons/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="./img/favicons/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="./img/favicons/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon-180x180.png">
+		<link rel="stylesheet" href="./styles/main.css?v=0.0.0">
+		<!-- Use these stylesheets for icons and typography in head of your HTML doc if you want :) -->
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	</head>
+	<body>
+		<!-- BEGIN HEADER -->
+		
+		<header class="header">
+			<!-- шапка -->
+		  	<div class="container">
+				<div class="row align-items-center">
+			  		<div class="col-5 col-md-3 col-lg-2">
+			  			<a href="index.html">
+			  				<img src="../img/logo/LogoType.svg" alt="logo" class="header_logo">
+			  			</a>
+			  		</div>
+			  		<div class="col-1 col-lg-9">
+			  			<!-- BEGIN MAIN-MENU -->
+			  			
+			  			<nav class='main-menu_wrapper' id='navigation-menu'>
+			  			    <!-- BEGIN BUTTON-HAMBURGER -->
+			  			    
+			  			    <button class="button-hamburger" type="button" data-toggle="navigation-menu" aria-label="Меню">
+			  			        <span class="button-hamburger__wrap">
+			  			            <span class="button-hamburger__inner"></span>
+			  			        </span>
+			  			    </button>
+			  			    
+			  			    <!-- END BUTTON-HAMBURGER -->
+			  			    <ul class="main-menu">
+			  			        <li class="main-menu_item">
+			  			            <a href="catalog.html">Hi-Tech</a>
+			  			        </li>
+			  			        <li class="main-menu_item">
+			  			            <a href="catalog.html">Дом</a>
+			  			        </li>
+			  			        <li class="main-menu_item">
+			  			            <a href="catalog.html">Здоровье</a>
+			  			        </li>
+			  			        <li class="main-menu_item">
+			  			            <a href="catalog.html">Компьютеры</a>
+			  			        </li>
+			  			        <li class="main-menu_item">
+			  			            <a href="catalog.html">Туризм</a>
+			  			        </li>
+			  			        <li class="main-menu_item">
+			  			            <a href="catalog.html">Строительство</a>
+			  			        </li>
+			  			        <li class="main-menu_item">
+			  			            <a href="catalog.html">Сравнения</a>
+			  			        </li>
+			  			        <li class="main-menu_item">
+			  			            <a href="catalog.html" class="down">Все категории</a>
+			  			            <ul class="main-menu_sub">
+			  			                <li class="main-menu_item">
+			  			                    <a href="catalog.html">Категория 1</a>
+			  			                </li>
+			  			                <li class="main-menu_item">
+			  			                    <a href="catalog.html">Категория 2</a>
+			  			                </li>
+			  			                <li class="main-menu_item">
+			  			                    <a href="catalog.html">Категория 3</a>
+			  			                </li>
+			  			                <li class="main-menu_item">
+			  			                    <a class="down" href="catalog.html">Категории</a>
+			  			                    <ul class="main-menu_sub main-menu_sub-left">
+			  			                        <li class="main-menu_item"><a href="catalog.html">Категория 4</a></li>
+			  			                        <li class="main-menu_item"><a href="catalog.html">Категория 5</a></li>
+			  			                    </ul>
+			  			                </li>
+			  			            </ul>
+			  			        </li>
+			  			    </ul>
+			  			</nav>
+			  			
+			  			<!-- END MAIN-MENU -->
+					</div>
+			  		<div class="col text-right">
+						<!-- BEGIN BUTTON-HAMBURGER -->
+						
+						<button class="button-hamburger" type="button" data-toggle="navigation-menu" aria-label="Меню">
+						    <span class="button-hamburger__wrap">
+						        <span class="button-hamburger__inner"></span>
+						    </span>
+						</button>
+						
+						<!-- END BUTTON-HAMBURGER -->
+						<button type="button" class='header_search' data-header="search">
+							<img src="../img/icons/Search.svg" alt="search" width="16px" height="16px">
+						</button>
+			  		</div>
+				</div>
+				<!-- выдвижной поиск меню-->
+				<div class="header_search-form">
+					<form action="#" method="post">
+						<input type="search" placeholder="Найти">
+					</form>
+				</div>
+		  	</div>
+		</header>
+		
+		<!-- END HEADER -->
+		<main class="container main">
+			<div class="row justify-content-center">
+				<div class="col-lg-10">
+					
+					<section class="section-block">
+						<div class="row">
+							<div class="col">
+								<h1>UI-Kit</h1>
+							</div>
+						</div>
+					</section>
+
+					<section class="section-block">
+						<div class="row">
+							<div class="col">
+								<h4 class="hr-title">ТИПОГРАФИЯ</h4>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<div class="row">
+									<div class="col" style="margin: 20px 0px;">
+										<h1>Заголовок H1</h1>
+										<p>Ubuntu Bold
+										<br>34px L41</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col" style="margin: 20px 0px;">
+										<h2>Заголовок H2</h2>
+										<p>Ubuntu Bold
+										<br>22px L28</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col" style="margin: 20px 0px;">
+										<h3>Заголовок H3</h3>
+										<p>Ubuntu Bold
+										<br>17px L22</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col" style="margin: 20px 0px;">
+										<h4>Заголовок H4</h4>
+										<p>Ubuntu Bold
+										<br>15px L20</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-4">
+								<div class="row">
+									<div class="col" style="margin: 20px 0px;">
+										<span class="button-1">button 1</span>
+										<p>Ubuntu Bold
+										<br>34px L41</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col" style="margin: 20px 0px;">
+										<span class="button-2">button 2</span>
+										<p>Ubuntu Bold
+										<br>22px L28</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col" style="margin: 20px 0px;">
+										<span class="caption-1">caption 1</span>
+										<p>Ubuntu Bold
+										<br>17px L22</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col" style="margin: 20px 0px;">
+										<span class="caption-2">caption 2</span>
+										<p>Ubuntu Bold
+										<br>15px L20</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-3">
+								<div class="row">
+									<div class="col" style="margin: 20px 0px;">
+										<hspan class="body-1">Body 1</span>
+										<p>Ubuntu Bold
+										<br>17px L22</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col" style="margin: 20px 0px;">
+										<span class="body-2">Body 2</span>
+										<p>Ubuntu Bold
+										<br>13px L18</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col" style="margin: 20px 0px;">
+										<span class="small-text">Small Text</span>
+										<p>Ubuntu Bold
+										<br>11px L13</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col" style="margin: 20px 0px;">
+										<a href="#">Link Text</a>
+										<p>Ubuntu Bold
+										<br>15px L20</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section class="section-block">
+						<div class="row">
+							<div class="col">
+								<h4 class="hr-title">ЦВЕТОВАЯ ПАЛИТРА</h4>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-6">
+								<span class="p" style="display: inline-block; margin-top: 50px;">PRIMARY COLORS</span>
+							</div>
+							<div class="col-6">
+								<span class="p" style="display: inline-block; margin-top: 50px;">ACCENT COLORS</span>
+							</div>
+							<div class="col">
+								<div class="bleu" style="width: 100px;height: 100px;border-radius: 5px;margin: 20px 20px 0px 0px;"></div>
+								<p>#5257F2</p>
+							</div>
+							<div class="col">
+								<div class="bleu-75" style="width: 100px;height: 100px;border-radius: 5px;margin: 20px 20px 0px 0px;"></div>
+								<p>#9195FF</p>
+							</div>
+							<div class="col">
+								<div class="bleu-25" style="width: 100px;height: 100px;border-radius: 5px;margin: 20px 20px 0px 0px;"></div>
+								<p>#E0E1FF</p>
+							</div>
+							<div class="col">
+								<div class="green" style="width: 100px;height: 100px;border-radius: 5px;margin: 20px 20px 0px 0px;"></div>
+								<p>#5257F2</p>
+							</div>
+							<div class="col">
+								<div class="green-75" style="width: 100px;height: 100px;border-radius: 5px;margin: 20px 20px 0px 0px;"></div>
+								<p>#9FFCE6</p>
+							</div>
+							<div class="col">
+								<div class="green-25" style="width: 100px;height: 100px;border-radius: 5px;margin: 20px 20px 0px 0px;"></div>
+								<p>#c0fff0</p>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-12">
+								<span class="p" style="display: inline-block; margin-top: 50px;">OTHER ACCENT COLORS</span>
+							</div>
+							<div class="col">
+								<div class="orange" style="width: 100px;height: 100px;border-radius: 5px;margin: 20px 20px 0px 0px;"></div>
+								<p>#F96D29</p>
+							</div>
+							<div class="col">
+								<div class="orange-75" style="width: 100px;height: 100px;border-radius: 5px;margin: 20px 20px 0px 0px;"></div>
+								<p>#FF9764</p>
+							</div>
+							<div class="col">
+								<div class="orange-25" style="width: 100px;height: 100px;border-radius: 5px;margin: 20px 20px 0px 0px;"></div>
+								<p>#FFBFA0</p>
+							</div>
+							<div class="col">
+								<div class="yellow" style="width: 100px;height: 100px;border-radius: 5px;margin: 20px 20px 0px 0px;"></div>
+								<p>#FFBF68</p>
+							</div>
+							<div class="col">
+								<div class="yellow-75" style="width: 100px;height: 100px;border-radius: 5px;margin: 20px 20px 0px 0px;"></div>
+								<p>#FFDDAF</p>
+							</div>
+							<div class="col">
+								<div class="yellow-25" style="width: 100px;height: 100px;border-radius: 5px;margin: 20px 20px 0px 0px;"></div>
+								<p>#FFEED8</p>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col">
+								<div class="pink" style="width: 100px;height: 100px;border-radius: 5px;margin: 20px 20px 0px 0px;"></div>
+								<p>#FF507C</p>
+							</div>
+							<div class="col">
+								<div class="pink-75" style="width: 100px;height: 100px;border-radius: 5px;margin: 20px 20px 0px 0px;"></div>
+								<p>#FF88A6</p>
+							</div>
+							<div class="col">
+								<div class="pink-25" style="width: 100px;height: 100px;border-radius: 5px;margin: 20px 20px 0px 0px;"></div>
+								<p>#FFB1C5</p>
+							</div>
+							<div class="col">
+								<div class="light-pink" style="width: 100px;height: 100px;border-radius: 5px;margin: 20px 20px 0px 0px;"></div>
+								<p>#EE8FFA</p>
+							</div>
+							<div class="col">
+								<div class="light-pink-75" style="width: 100px;height: 100px;border-radius: 5px;margin: 20px 20px 0px 0px;"></div>
+								<p>#F7BAFF</p>
+							</div>
+							<div class="col">
+								<div class="light-pink-25" style="width: 100px;height: 100px;border-radius: 5px;margin: 20px 20px 0px 0px;"></div>
+								<p>#FBDBFF</p>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-12">
+								<span class="p" style="display: inline-block; margin-top: 50px;">SEMANTIC COLORS</span>
+							</div>
+							<div class="col">
+								<div class="yellow-semantic" style="width: 100px;height: 100px;border-radius: 5px;margin: 20px 20px 0px 0px;"></div>
+								<p>#FFCF5C</p>
+							</div>
+							<div class="col">
+								<div class="yellow-semantic-75" style="width: 100px;height: 100px;border-radius: 5px;margin: 20px 20px 0px 0px;"></div>
+								<p>#FFE29D</p>
+							</div>
+							<div class="col">
+								<div class="yellow-semantic-25" style="width: 100px;height: 100px;border-radius: 5px;margin: 20px 20px 0px 0px;"></div>
+								<p>#FFCF5C</p>
+							</div>
+							<div class="col">
+								<div class="orange-semantic" style="width: 100px;height: 100px;border-radius: 5px;margin: 20px 20px 0px 0px;"></div>
+								<p>#FFA26B</p>
+							</div>
+							<div class="col">
+								<div class="orange-semantic-75" style="width: 100px;height: 100px;border-radius: 5px;margin: 20px 20px 0px 0px;"></div>
+								<p>#FFC7A6</p>
+							</div>
+							<div class="col">
+								<div class="orange-semantic-25" style="width: 100px;height: 100px;border-radius: 5px;margin: 20px 20px 0px 0px;"></div>
+								<p>#FFE8DA</p>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col">
+								<div class="bleu-semantic" style="width: 100px;height: 100px;border-radius: 5px;margin: 20px 20px 0px 0px;"></div>
+								<p>#0084F4</p>
+							</div>
+							<div class="col">
+								<div class="bleu-semantic-75" style="width: 100px;height: 100px;border-radius: 5px;margin: 20px 20px 0px 0px;"></div>
+								<p>#66B5F8</p>
+							</div>
+							<div class="col">
+								<div class="bleu-semantic-25" style="width: 100px;height: 100px;border-radius: 5px;margin: 20px 20px 0px 0px;"></div>
+								<p>#D5E9FA</p>
+							</div>
+							<div class="col">
+								<div class="green-semantic" style="width: 100px;height: 100px;border-radius: 5px;margin: 20px 20px 0px 0px;"></div>
+								<p>#00C48C</p>
+							</div>
+							<div class="col">
+								<div class="green-semantic-75" style="width: 100px;height: 100px;border-radius: 5px;margin: 20px 20px 0px 0px;"></div>
+								<p>#7DDFC3</p>
+							</div>
+							<div class="col">
+								<div class="green-semantic-25" style="width: 100px;height: 100px;border-radius: 5px;margin: 20px 20px 0px 0px;"></div>
+								<p>#D5F2EA</p>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-2">
+								<div class="red-semantic" style="width: 100px;height: 100px;border-radius: 5px;margin: 20px 20px 0px 0px;"></div>
+								<p>#FF647C</p>
+							</div>
+							<div class="col-2">
+								<div class="red-semantic-75" style="width: 100px;height: 100px;border-radius: 5px;margin: 20px 20px 0px 0px;"></div>
+								<p>#FDAFBB</p>
+							</div>
+							<div class="col-2">
+								<div class="red-semantic-25" style="width: 100px;height: 100px;border-radius: 5px;margin: 20px 20px 0px 0px;"></div>
+								<p>#FBE4E8</p>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-12">
+								<span class="p" style="display: inline-block; margin-top: 50px;">NEUTRAL COLORS</span>
+							</div>
+							<div class="col">
+								<div class="gray-black" style="width: 100px;height: 100px;border-radius: 5px;margin: 20px 20px 0px 0px;"></div>
+								<p>#212121</p>
+							</div>
+							<div class="col">
+								<div class="gray" style="width: 100px;height: 100px;border-radius: 5px;margin: 20px 20px 0px 0px;"></div>
+								<p>#5F6266</p>
+							</div>
+							<div class="col">
+								<div class="gray-1" style="width: 100px;height: 100px;border-radius: 5px;margin: 20px 20px 0px 0px;"></div>
+								<p>#888A8D</p>
+							</div>
+							<div class="col">
+								<div class="light-gray" style="width: 100px;height: 100px;border-radius: 5px;margin: 20px 20px 0px 0px;"></div>
+								<p>#CECECE</p>
+							</div>
+							<div class="col">
+								<div class="light-gray-1" style="width: 100px;height: 100px;border-radius: 5px;margin: 20px 20px 0px 0px;"></div>
+								<p>#F7F5F9</p>
+							</div>
+							<div class="col">
+								<div class="white" style="width: 100px;height: 100px; border: 1px solid #eee; border-radius: 5px;margin: 20px 20px 0px 0px;"></div>
+								<p>#FFFFFF</p>
+							</div>
+						</div>
+
+
+						<div class="row">
+							<div class="col-12">
+								<span class="p" style="display: inline-block; margin-top: 50px;">NEUTRAL COLORS</span>
+							</div>
+							<div class="col">
+								<div class="gradient" style="width: 100%;height: 100px;border-radius: 5px;margin: 20px 20px 0px 0px;"></div>
+								<p>#FFa50E/#F65335/90C&#176;</p>
+							</div>
+						</div>
+					</section>
+
+					<section class="section-block">
+						<div class="row">
+							<div class="col-6">
+								<h4 class="hr-title">BUTTONS</h4>
+							</div>
+							<div class="col-6">
+								<h4 class="hr-title">INPUT FORMS</h4>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-6">
+								<div class="row">
+									<div class="col-6">
+										<span class="p" style="display: inline-block; margin-top: 50px;">DEFAULT</span>
+									</div>
+									<div class="col-6">
+										<span class="p" style="display: inline-block; margin-top: 50px;">DISABLED</span>
+									</div>
+									<div class="col" style="margin: 20px 20px 0px 0px;">
+										<button class="applicationButton" type="submit" form="#">Default</button>
+									</div>
+									<div class="col" style="margin: 20px 20px 0px 0px;">
+										<button class="applicationButton--disabled" type="submit" form="#" disabled>Default</button>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col" style="margin: 20px 20px 0px 0px;">
+										<button class="applicationButton--hover" type="submit" form="#">Hover</button>
+									</div>
+									<div class="col" style="margin: 20px 20px 0px 0px;">
+										<button class="applicationButton--disabled" type="submit" form="#" disabled>Hover</button>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col" style="margin: 20px 20px 0px 0px;">
+										<button class="applicationButtonLine" type="submit" form="#">Default</button>
+									</div>
+									<div class="col" style="margin: 20px 20px 0px 0px;">
+										<button class="applicationButtonLine--disabled" type="submit" form="#" disabled>Default</button>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col" style="margin: 20px 20px 0px 0px;">
+										<button class="applicationButtonLine--hover" type="submit" form="#">Hover</button>
+									</div>
+									<div class="col" style="margin: 20px 20px 0px 0px;">
+										<button class="applicationButtonLine--disabled" type="submit" form="#" disabled>Hover</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="row">
+									<div class="col-12">
+										<span class="p" style="display: inline-block; margin-top: 50px;">DEFAULT</span>
+									</div>
+									<div class="col" style="margin: 20px 20px 0px 0px;">
+										<div class="form">
+											<div class="form">
+												<form id="application" action="application.php" method="POST" name="application">
+													<div class="form__label">
+														<span>Имя</span>
+														<input name="name" maxlength="20" placeholder="Введите ваше имя*" required />
+													</div>
+													<div class="form__label">
+														<span>Email</span>
+														<input name="email" type="email" maxlength="20" placeholder="Введите ваш E-mail*" required />
+													</div>
+													<div class="form__label">
+														<span>Сообщение</span>
+														<textarea class="txtarea" name="msg" placeholder="Ваше сообщение:"></textarea>
+													</div>
+													<div class="form__label form__label--disabled">
+														<span>Имя</span>
+														<input name="name" maxlength="20" placeholder="Введите ваше имя*" required disabled />
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+									<div class="col-2">
+										<span class="p" style="display: inline-block; margin-top: 50px;">Default Name</span>
+										<span class="p" style="display: inline-block; margin-top: 50px;">Default Email</span>
+										<span class="p" style="display: inline-block; margin-top: 70px;">Default Message</span>
+										<span class="p" style="display: inline-block; margin-top: 85px;">Disabled</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section class="section-block">
+						<div class="row">
+							<div class="col">
+								<h4 class="hr-title">ОСТАЛЬНЫЕ КОМПОНЕНТЫ</h4>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-2" style="margin-right: 50px;">
+								<div class="row">
+									<div class="col-12">
+										<span class="p" style="display: inline-block; margin-top: 50px; margin-bottom: 40px">CHECKBOX</span>
+									</div>
+									<div class="col">
+										<div class="form__checkbox">
+											<label class="field__label-check">
+						                  		<input class="checkbox" type="checkbox" name="checkbox-test-1">
+						                  		<span class="checkbox-custom"></span>
+						                  		<!--<span class="label">Текст</span>-->
+						                	</label>
+										</div> 
+									</div>
+									<div class="col">
+										<div class="form__checkbox">
+											<label class="field__label-check">
+							                  	<input class="checkbox" type="checkbox" name="checkbox-test-2" checked>
+							                  	<span class="checkbox-custom"></span>
+							                  	<!--<span class="label">Текст</span>-->
+							                </label>
+										</div> 
+									</div>
+									<div class="col">
+										<div class="form__checkbox">
+							                <label class="field__label-check field__label-check--disabled">
+							                  	<input class="checkbox" type="checkbox" name="checkbox-test-3" disabled checked>
+							                  	<span class="checkbox-custom checkbox-custom--disable"></span>
+							                  	<!--<span class="label">Текст</span>-->
+							                </label>
+										</div> 
+									</div>
+									<div class="col">
+										<div class="form__checkbox">
+							                <label class="field__label-check field__label-check--disabled">
+							                  	<input class="checkbox" type="checkbox" name="checkbox-test-3" disabled>
+							                  	<span class="checkbox-custom checkbox-custom--disable"></span>
+							                  	<!--<span class="label">Текст</span>-->
+							                </label>
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<div class="col-2" style="margin-right: 50px;">
+								<div class="row">
+									<div class="col-12">
+										<span class="p" style="display: inline-block; margin-top: 50px;  margin-bottom: 40px">RADIO</span>
+									</div>
+									<div class="col">
+										<div class="form__checkbox">
+											<label class="field__label-check">
+							                	<input class="radio" type="radio" name="radio-test-1">
+							                  	<span class="radio-custom"></span>
+							                  	<!--<span class="label">Текст</span>-->
+							                </label>
+										</div> 
+									</div>
+									<div class="col">
+										<div class="form__checkbox">
+											<label class="field__label-check">
+							                  	<input class="radio" type="radio" name="radio-test-2" checked>
+							                  	<span class="radio-custom"></span>
+							                  	<!--<span class="label">Текст</span>-->
+							                </label>
+										</div> 
+									</div>
+									<div class="col">
+										<div class="form__checkbox">
+							                <label class="field__label-check field__label-check--disabled">
+							                  	<input class="radio" type="radio" name="radio-test-3" disabled checked>
+							                  	<span class="radio-custom radio-custom--disable"></span>
+							                  	<!--<span class="label">Текст</span>-->
+							                </label>
+										</div> 
+									</div>
+									<div class="col">
+										<div class="form__checkbox">
+							                <label class="field__label-check field__label-check--disabled">
+							                  	<input class="radio" type="radio" name="radio-test-4" disabled>
+							                  	<span class="radio-custom radio-custom--disable "></span>
+							                  	<!--<span class="label">Текст</span>-->
+							                </label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-3">
+								<span class="p" style="display: inline-block; margin-top: 50px;">PAGINATION PAGE</span>
+								<div style="margin-left: -50px;">
+									<!-- BEGIN PAGINATE -->
+									
+									<div class="paginate paginate--margin">
+									    <ul class="paginate__block">
+									        <li class="paginate__list">
+									            <a class="paginate__link" href="#">1</a>
+									        </li>
+									        <li class="paginate__list">
+									            <a class="paginate__link" href="#">2</a>
+									        </li>
+									        <li class="paginate__list">
+									            <a class="paginate__link paginate__link--bleu" href="#">&hellip;</a>
+									        </li>
+									        <li class="paginate__list">
+									            <a class="paginate__link paginate__link--active" href="#">6</a>
+									        </li>
+									        <li class="paginate__list">
+									            <a class="paginate__link" href="#">7</a>
+									        </li>
+									    </ul>
+									</div>
+									
+									<!-- END PAGINATE -->
+								</div>
+							</div>
+							<div class="col-3">
+								<span class="p" style="display: inline-block; margin-top: 50px;">DIVIDER</span>
+								<hr class="hr">
+							</div>
+						</div>
+
+
+						<div class="row">
+							<div class="col" style="margin-right: 40px;">
+								<span class="p" style="display: inline-block; margin-top: 50px; margin-right: 40px;">FEEDBACK</span>
+								<div class="reviews">
+									<div class="reviews__wrapper">
+										<div class="reviews__list">
+											<ul>
+												<li class="reviews-item">
+													<div class="reviews-item__photo"><img src="img/img_notification.png" alt="Мария" data-object-fit="cover"></div>
+													<div class="reviews-item__info">
+														<div class="reviews-item__header">
+															<div class="reviews-item__name">Мария</div>
+															<div class="reviews-item__stars">
+																
+															    <div class="review_stars_wrap">
+																	<div id="review_stars">
+																	    <input id="star-4" type="radio" name="stars"/>
+																	    <label title="Отлично" for="star-4">
+																	    	<i class="fas fa-star"></i>
+																	    </label>
+																	    <input id="star-3" type="radio" name="stars"/>
+																	    <label title="Хорошо" for="star-3">
+																	    	<i class="fas fa-star"></i>
+																	    </label>
+																	    <input id="star-2" type="radio" name="stars" checked="checked" />
+																	    <label title="Нормально" for="star-2">
+																	    	<i class="fas fa-star"></i>
+																	    </label>
+																	    <input id="star-1" type="radio" name="stars"/>
+																	    <label title="Плохо" for="star-1">
+																	    	<i class="fas fa-star"></i>
+																	    </label>
+																	    <input id="star-0" type="radio" name="stars"/>
+																	    <label title="Ужасно" for="star-0">
+																	    	<i class="fas fa-star"></i>
+																	    </label>
+																	</div>
+															    </div>
+
+															</div>
+														</div>
+														<time class="reviews-item__time" datetime="2018-04-23">23.04.2018</time>
+														<div class="reviews-item__body">
+															<p>Не следует, однако забывать, что укрепление и развитие структуры представляет собой интересный эксперимент проверки существенных финансовых и административных условий.</p>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<span class="p" style="display: inline-block; margin-top: 50px;">SOCIAL</span>
+								<!-- BEGIN SOCIAL -->
+								
+								<div class="social">
+									<ul class="social__cont">
+										<li class="facebook social__item">
+											<i class="fab fa-facebook-f"></i>
+										</li>
+										<li class="twitter social__item">
+											<i class="fab fa-vk"></i>
+										</li>
+										<li class="instagram social__item">
+											<i class="fab fa-youtube"></i>
+										</li>
+										<li class="google social__item">
+											<i class="fab fa-odnoklassniki"></i>
+										</li>
+									</ul>
+								</div>
+								
+								<!-- END SOCIAL -->
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col">
+								<span class="p" style="display: inline-block; margin-top: 50px;">LABEL</span>
+								<!-- BEGIN ALERTS -->
+								
+								<div class="alerts alerts--bleu">
+									<span class="alerts__title alerts--title-bleu">information</span>
+								</div>
+								
+								<div class="alerts alerts--red">
+									<span class="alerts__title alerts--title-red">information</span>
+								</div>
+								
+								<div class="alerts alerts--green">
+									<span class="alerts__title alerts--title-green">information</span>
+								</div>
+								
+								<div class="alerts alerts--yellow">
+									<span class="alerts__title alerts--title-yellow">information</span>
+								</div>
+								
+								<!-- END ALERTS -->
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-12">
+								<span class="p" style="display: inline-block; margin-top: 50px;">LIST</span>
+							</div>
+							<div class="col">
+								<!-- BEGIN LIST-CONTENT -->
+								
+								<ol class="table-content rounded-list">
+									<li class="table-content__item table-content__item--border">
+										<a class="table-content__link" href="">Заголовок 1</a>
+									</li>
+									<li class="table-content__item">
+										<a class="table-content__link" href="">Заголовок 2</a>
+									</li>
+									<li class="table-content__item">
+										<a class="table-content__link" href="">Заголовок 3</a>
+									</li>
+								</ol>
+								
+								<!-- END LIST-CONTENT -->
+							</div>
+							<div class="col-3" style="margin-left: 87px;">
+								<!-- BEGIN LIST-CONTENT -->
+								<ol class="table-content">
+									<li>
+										<p class="table-content__link table-content__link--background-bleu-no-number">Заголовок 1</p>
+									</li>
+									<li>
+										<p class="table-content__link table-content__link--background-bleu-no-number">Заголовок 2</p>
+									</li>
+									<li>
+										<p class="table-content__link table-content__link--background-bleu-no-number">Заголовок 3</p>
+									</li>
+								</ol>
+								<!-- END LIST-CONTENT -->
+							</div>
+							<div class="col-2">
+								<!-- BEGIN LIST-CONTENT -->
+								<ol class="table-content">
+									<li>
+										<p class="table-content__link table-content__link--background-bleu">Заголовок 1</p>
+									</li>
+									<li>
+										<p class="table-content__link table-content__link--background-bleu">Заголовок 2</p>
+									</li>
+									<li>
+										<p class="table-content__link table-content__link--background-bleu">Заголовок 3</p>
+									</li>
+								</ol>
+								<!-- END LIST-CONTENT -->
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col">
+								<!-- BEGIN MENU-CATALOG -->
+								
+								<ul class="menu-sorting menu-sorting--margin">
+								    <li class="menu-sorting__item menu-sorting__item-first">
+								        <a class="menu-sorting__link" href="#">Все рубрики</a>
+								    </li>
+								    <li class="menu-sorting__item menu-sorting__item--active">
+								        <div class="menu-sorting__decor orange">
+								            <img src="img/icons/Combined Shape.svg" alt="icon">
+								        </div>
+								        <a class="menu-sorting__link" href="#">Категория</a>
+								    </li>
+								    <li class="menu-sorting__item menu-sorting__item--active">
+								        <div class="menu-sorting__decor light-pink">
+								            <img src="img/icons/Combined Shape.svg" alt="icon">
+								        </div>
+								        <a class="menu-sorting__link" href="#">Категория</a>
+								    </li>
+								    <li class="menu-sorting__item menu-sorting__item--active">
+								        <div class="menu-sorting__decor bleu">
+								            <img src="img/icons/Combined Shape.svg" alt="icon">
+								        </div>
+								        <a class="menu-sorting__link" href="#">Категория</a>
+								    </li>
+								    <li class="menu-sorting__item menu-sorting__item--active">
+								        <div class="menu-sorting__decor yellow">
+								            <img src="img/icons/Combined Shape.svg" alt="icon">
+								        </div>
+								        <a class="menu-sorting__link" href="#">Категория</a>
+								    </li>
+								    <li class="menu-sorting__item menu-sorting__item--active">
+								        <div class="menu-sorting__decor orange">
+								            <img src="img/icons/Combined Shape.svg" alt="icon">
+								        </div>
+								        <a class="menu-sorting__link" href="#">Категория</a>
+								    </li>
+								    <li class="menu-sorting__item menu-sorting__item--active">
+								        <div class="menu-sorting__decor bleu">
+								            <img src="img/icons/Combined Shape.svg" alt="icon">
+								        </div>
+								        <a class="menu-sorting__link" href="#">Категория</a>
+								    </li>
+								    <li class="menu-sorting__item menu-sorting__item--active">
+								        <div class="menu-sorting__decor green">
+								            <img src="img/icons/Combined Shape.svg" alt="icon">
+								        </div>
+								        <a class="menu-sorting__link" href="#">Категория</a>
+								    </li>
+								    <li class="menu-sorting__item menu-sorting__item--active">
+								        <div class="menu-sorting__decor pink">
+								            <img src="img/icons/Combined Shape.svg" alt="icon">
+								        </div>
+								        <a class="menu-sorting__link" href="#">Категория</a>
+								    </li>
+								</ul>
+								
+								<!-- END MENU-CATALOG -->
+							</div>
+							<div class="col" style="margin-left: 10px;">
+							<ol class="plus-minus">
+								<li class="plus-minus__item">
+									<p class="plus-minus__link">
+									Не следует, однако забывать, что укрепление и развитие структуры представляет собой интересный эксперимент проверки условий.</p>
+								</li>
+								<li class="plus-minus__item">
+									<p class="plus-minus__link">
+									Не следует, однако забывать, что укрепление и развитие структуры представляет собой интересный эксперимент проверки условий.</p>
+								</li>
+								<li class="plus-minus__item">
+									<p class="plus-minus__link">
+									Не следует, однако забывать, что укрепление и развитие структуры представляет собой интересный эксперимент проверки условий.</p>
+								</li>
+							</ol>
+							<ol class="plus-minus">
+								<li class="plus-minus__item">
+									<p class="plus-minus__link plus-minus__link--minus">
+									Не следует, однако забывать, что укрепление и развитие структуры представляет собой интересный эксперимент проверки условий.</p>
+								</li>
+								<li class="plus-minus__item">
+									<p class="plus-minus__link plus-minus__link--minus">
+									Не следует, однако забывать, что укрепление и развитие структуры представляет собой интересный эксперимент проверки условий.</p>
+								</li>
+								<li class="plus-minus__item">
+									<p class="plus-minus__link plus-minus__link--minus">
+									Не следует, однако забывать, что укрепление и развитие структуры представляет собой интересный эксперимент проверки условий.</p>
+								</li>
+							</ol>
+							</div>
+						</div>
+					</section>
+
+					<section class="section-block">
+						<div class="col-12">
+							<span class="p" style="display: inline-block; margin-top: 50px;">TABLE</span>
+						</div>
+						<!-- BEGIN TABLE -->
+						<div class="table__cont">
+							<table class="table">
+								<thead>
+									<tr>
+									<th class="table__header table__header--width-1">Номинация</th>
+									<th class="table__header table__header--width-2">Место</th>
+									<th class="table__header table__header--width-3">Наименование товара</th>
+									<th class="table__header table__header--width-4">Цена</th>
+									</tr>
+								</thead>
+									<tbody>
+										<tr>
+											<td class="table__col gray-text">Лучшие автопылесосы  для сухой уборки</td>
+											<td class="table__col">1</td>
+											<td class="table__col"><a href="#">VITEK VT-1840</a></td>
+											<td class="table__col table__decor">1 990 ₽</td>
+										</tr>
+										<tr>
+											<td class="table__col gray-text">-</td>
+											<td class="table__col">2</td>
+											<td class="table__col"><a href="#">BLACK & DECKER PAD 1200</a></td>
+											<td class="table__col table__decor">2 950 ₽</td>
+										</tr>
+										<tr>
+											<td class="table__col gray-text">Лучшие автопылесосы  для сухой уборки</td>
+											<td class="table__col">1</td>
+											<td class="table__col"><a href="#">VITEK VT-1840</a></td>
+											<td class="table__col table__decor">1 990 ₽</td>
+										</tr>
+										<tr>
+											<td class="table__col gray-text">-</td>
+											<td class="table__col">2</td>
+											<td class="table__col"><a href="#">BLACK & DECKER PAD 1200</a></td>
+											<td class="table__col table__decor">2 950 ₽</td>
+										</tr>
+									</tbody>
+							</table>
+						</div>
+						<!-- END TABLE -->
+					</section>
+
+					<section class="section-block">
+						<div class="col-12">
+							<span class="p" style="display: inline-block; margin-top: 50px; margin-bottom: 30px;">VS LIST</span>
+						</div>
+						<!-- BEGIN VS -->
+						
+						<div class="vs">
+							<div class="vs__header">
+								<div class="row justify-content-center">
+									<div class="col">
+										<span class="vs__title">Pepsi</span>
+									</div>
+									<div class="col-1">
+										<span class="vs__title vs__title--mini">vs</span>
+									</div>
+									<div class="col">
+										<span class="vs__title">Coca-cola</span>
+									</div>
+								</div>
+							</div>
+							<table class="vs__table">
+							    <tr>
+							        <td class="vs__table-item vs__table-item--style-border">
+							        	<ol class="plus-minus">
+											<li class="plus-minus__item">
+												<p class="plus-minus__link">
+												Не следует, однако забывать, что укрепление и развитие структуры представляет собой интересный эксперимент проверки условий.</p>
+											</li>
+											<li class="plus-minus__item">
+												<p class="plus-minus__link">
+												Не следует, однако забывать, что укрепление и развитие структуры представляет собой интересный эксперимент проверки условий.</p>
+											</li>
+										</ol>
+							        </td>
+							        <td class="vs__table-item">
+							        	<ol class="plus-minus">
+											<li class="plus-minus__item">
+												<p class="plus-minus__link">
+												Не следует, однако забывать, что укрепление и развитие структуры представляет собой интересный эксперимент проверки условий.</p>
+											</li>
+											<li class="plus-minus__item">
+												<p class="plus-minus__link">
+												Не следует, однако забывать, что укрепление и развитие структуры представляет собой интересный эксперимент проверки условий.</p>
+											</li>
+										</ol>
+							        </td>
+							    </tr>
+							    <tr>
+							        <td class="vs__table-item vs__table-item--style-border">
+										<ol class="plus-minus">
+											<li class="plus-minus__item">
+												<p class="plus-minus__link plus-minus__link--minus">
+												Не следует, однако забывать, что укрепление и развитие структуры представляет собой интересный эксперимент проверки условий.</p>
+											</li>
+										</ol>
+							        </td>
+							        <td class="vs__table-item">
+										<ol class="plus-minus">
+											<li class="plus-minus__item">
+												<p class="plus-minus__link plus-minus__link--minus">
+												Не следует, однако забывать, что укрепление и развитие структуры представляет собой интересный эксперимент проверки условий.</p>
+											</li>
+											<li class="plus-minus__item">
+												<p class="plus-minus__link plus-minus__link--minus">
+												Не следует, однако забывать, что укрепление и развитие структуры представляет собой интересный эксперимент проверки условий.</p>
+											</li>
+										</ol>
+							        </td>
+							    </tr>
+							</table>
+						</div>
+						
+						<!-- END VS -->
+					</section>
+
+					<section class="section-block">
+						<div class="col-12">
+							<span class="p" style="display: inline-block; margin-top: 50px;">ADVANTAGES</span>
+						</div>
+						<div class="row" style="margin-bottom: 80px;">
+							<div class="col-sm">
+								<!-- BEGIN NUMBERED TEXT BLOCK -->
+								
+								<div class="numbered-text-block">
+									<div class="numbered-text-block_number">
+										<span>1</span>
+									</div>
+									<div class="numbered-text-block_text">
+										<h3>Заголовок</h3>
+										<p>
+											Не следует, однако забывать, что укрепление и развитие структуры представляет собой интересный эксперимент проверки существенных финансовых и административных условий.
+										</p>
+									</div>
+								</div>
+								
+								<!-- END NUMBERED TEXT BLOCK -->
+							</div>
+							<div class="col-sm padding-left">
+								<!-- BEGIN NUMBERED TEXT BLOCK -->
+								
+								<div class="numbered-text-block">
+									<div class="numbered-text-block_number">
+										<span>1</span>
+									</div>
+									<div class="numbered-text-block_text">
+										<h3>Заголовок</h3>
+										<p>
+											Не следует, однако забывать, что укрепление и развитие структуры представляет собой интересный эксперимент проверки существенных финансовых и административных условий.
+										</p>
+									</div>
+								</div>
+								
+								<!-- END NUMBERED TEXT BLOCK -->
+							</div>
+							<div class="col-sm padding-left">
+								<!-- BEGIN NUMBERED TEXT BLOCK -->
+								
+								<div class="numbered-text-block">
+									<div class="numbered-text-block_number">
+										<span>1</span>
+									</div>
+									<div class="numbered-text-block_text">
+										<h3>Заголовок</h3>
+										<p>
+											Не следует, однако забывать, что укрепление и развитие структуры представляет собой интересный эксперимент проверки существенных финансовых и административных условий.
+										</p>
+									</div>
+								</div>
+								
+								<!-- END NUMBERED TEXT BLOCK -->
+							</div>
+						</div>
+					</section>
+
+					<section class="section-block">
+						<div class="row">
+							<div class="col-12">
+								<h4 class="hr-title">КАРТОЧКИ</h4>
+							</div>
+							<div class="row justify-content-center">
+								<div class="col-8 col-sm-10 col-lg-12">
+									<!-- BEGIN CART-GRID -->
+									
+									<div class="cart-grid">
+									    <div class="cart-grid_row">
+									        <div class="cart-grid_item">
+									            <!-- BEGIN CART-MAIN -->
+									            
+									            <a href="article.html" class="cart-main-decor link">
+									            	<div class="cart-main margin-bottom">
+									            		<picture>
+									            			<div class="cart-main_image-cont">
+									            				<img class="cart-main_image" src="img/business-desk-with-gadgets-and-personal-possessions.jpg" alt="image">
+									            			</div>
+									            		</picture>
+									            		<div class="cart-main_block-info">
+									            			<h3 class="cart-main_title">5 способов укрепить свое ваше здоровье на долгие годы, самые провереные методы и способы от ведущих врачей</h3>
+									            			<footer class="cart-main_info">
+									            				<img src="img/icons/16px/Eye.svg" alt="eye" width="24px" height="24px">
+									            				<span>1289</span>
+									            			</footer>
+									            		</div>
+									            	</div>
+									            	<div class="cart-main-decor_block">
+									            		<img src="img/icons/Combined Shape.svg" alt="icon">
+									            	</div>
+									            	<div class="cart-main-decor_block-text">
+									            		Новинка
+									            	</div>
+									            </a>
+									            
+									            <!-- END CART-MAIN -->
+									        </div>
+									        <div class="cart-grid_item">
+									            <!-- BEGIN CART-MAIN -->
+									            
+									            <a href="article.html" class="cart-main-decor link">
+									            	<div class="cart-main margin-bottom">
+									            		<picture>
+									            			<div class="cart-main_image-cont">
+									            				<img class="cart-main_image" src="img/business-desk-with-gadgets-and-personal-possessions.jpg" alt="image">
+									            			</div>
+									            		</picture>
+									            		<div class="cart-main_block-info">
+									            			<h3 class="cart-main_title">5 способов укрепить свое ваше здоровье на долгие годы, самые провереные методы и способы от ведущих врачей</h3>
+									            			<footer class="cart-main_info">
+									            				<img src="img/icons/16px/Eye.svg" alt="eye" width="24px" height="24px">
+									            				<span>1289</span>
+									            			</footer>
+									            		</div>
+									            	</div>
+									            	<div class="cart-main-decor_block">
+									            		<img src="img/icons/Combined Shape.svg" alt="icon">
+									            	</div>
+									            	<div class="cart-main-decor_block-text">
+									            		Новинка
+									            	</div>
+									            </a>
+									            
+									            <!-- END CART-MAIN -->
+									        </div>
+									        <div class="cart-grid_item">
+									            <!-- BEGIN CART-MAIN -->
+									            
+									            <a href="article.html" class="cart-main-decor link">
+									            	<div class="cart-main margin-bottom">
+									            		<picture>
+									            			<div class="cart-main_image-cont">
+									            				<img class="cart-main_image" src="img/business-desk-with-gadgets-and-personal-possessions.jpg" alt="image">
+									            			</div>
+									            		</picture>
+									            		<div class="cart-main_block-info">
+									            			<h3 class="cart-main_title">5 способов укрепить свое ваше здоровье на долгие годы, самые провереные методы и способы от ведущих врачей</h3>
+									            			<footer class="cart-main_info">
+									            				<img src="img/icons/16px/Eye.svg" alt="eye" width="24px" height="24px">
+									            				<span>1289</span>
+									            			</footer>
+									            		</div>
+									            	</div>
+									            	<div class="cart-main-decor_block">
+									            		<img src="img/icons/Combined Shape.svg" alt="icon">
+									            	</div>
+									            	<div class="cart-main-decor_block-text">
+									            		Новинка
+									            	</div>
+									            </a>
+									            
+									            <!-- END CART-MAIN -->
+									        </div>
+									        <div class="cart-grid_item">
+									            <!-- BEGIN CART-MAIN -->
+									            
+									            <a href="article.html" class="cart-main-decor link">
+									            	<div class="cart-main margin-bottom">
+									            		<picture>
+									            			<div class="cart-main_image-cont">
+									            				<img class="cart-main_image" src="img/business-desk-with-gadgets-and-personal-possessions.jpg" alt="image">
+									            			</div>
+									            		</picture>
+									            		<div class="cart-main_block-info">
+									            			<h3 class="cart-main_title">5 способов укрепить свое ваше здоровье на долгие годы, самые провереные методы и способы от ведущих врачей</h3>
+									            			<footer class="cart-main_info">
+									            				<img src="img/icons/16px/Eye.svg" alt="eye" width="24px" height="24px">
+									            				<span>1289</span>
+									            			</footer>
+									            		</div>
+									            	</div>
+									            	<div class="cart-main-decor_block">
+									            		<img src="img/icons/Combined Shape.svg" alt="icon">
+									            	</div>
+									            	<div class="cart-main-decor_block-text">
+									            		Новинка
+									            	</div>
+									            </a>
+									            
+									            <!-- END CART-MAIN -->
+									        </div>
+									    </div>
+									</div>
+									
+									<!-- END CART-GRID -->
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section class="section-block">
+						<div class="row" style="margin-bottom: 50px;">
+							<div class="col-12">
+								<h4 class="hr-title">ИКОНОГРАФИКА</h4>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col align-self-center">
+								<div class="block-decor">
+									<img src="img/icons/icons-title/turist.svg" alt="icon">
+								</div>
+								<div class="cont">
+									<p class="cont__title text-center subtitle">Туризм</p>
+								</div>
+							</div>
+
+							<div class="col">
+								<div class="block-decor block-decor--bleu">
+									<img src="img/icons/icons-title/laptop.svg" alt="icon">
+								</div>
+								<div class="cont">
+									<p class="cont__title text-center subtitle">Хай-тек</p>
+								</div>
+							</div>
+
+							<div class="col">
+								<div class="block-decor block-decor--green">
+									<img src="img/icons/Combined Shape.svg" alt="icon">
+								</div>
+								<div class="cont">
+									<p class="cont__title text-center subtitle">Спорт</p>
+								</div>
+							</div>
+
+							<div class="col">
+								<div class="block-decor block-decor--green">
+									<img src="img/icons/icons-title/child.svg" alt="icon">
+								</div>
+								<div class="cont">
+									<p class="cont__title text-center subtitle">Дети</p>
+								</div>
+							</div>
+
+							<div class="col">
+								<div class="block-decor block-decor--yellow">
+									<img src="img/icons/icons-title/basket.svg" alt="icon">
+								</div>
+								<div class="cont">
+									<p class="cont__title text-center subtitle">Баскетбол</p>
+								</div>
+							</div>
+
+							<div class="col">
+								<div class="block-decor block-decor--green">
+									<img src="img/icons/icons-title/medicine.svg" alt="icon">
+								</div>
+								<div class="cont">
+									<p class="cont__title text-center subtitle">Здоровье</p>
+								</div>
+							</div>
+
+							<div class="col">
+								<div class="block-decor">
+									<img src="img/icons/icons-title/boxing.svg" alt="icon">
+								</div>
+								<div class="cont">
+									<p class="cont__title text-center subtitle">Бокс</p>
+								</div>
+							</div>
+
+							<div class="col">
+								<div class="block-decor block-decor--bleu">
+									<img src="img/icons/icons-title/building.svg" alt="icon">
+								</div>
+								<div class="cont">
+									<p class="cont__title text-center subtitle">Строительство</p>
+								</div>
+							</div>
+
+							<div class="col">
+								<div class="block-decor block-decor--green">
+									<img src="img/icons/icons-title/rowing.svg" alt="icon">
+								</div>
+								<div class="cont">
+									<p class="cont__title text-center subtitle">Гребля</p>
+								</div>
+							</div>
+
+							<div class="col">
+								<div class="block-decor block-decor--light-pink">
+									<img src="img/icons/icons-title/house.svg" alt="icon">
+								</div>
+								<div class="cont">
+									<p class="cont__title text-center subtitle">Дом</p>
+								</div>
+							</div>
+
+							<div class="col">
+								<div class="block-decor block-decor--yellow">
+									<img src="img/icons/icons-title/running.svg" alt="icon">
+								</div>
+								<div class="cont">
+									<p class="cont__title text-center subtitle">Бег</p>
+								</div>
+							</div>
+
+						</div>
+					</section>
+
+
+				</div>
+			</div>
+		</main>
+		
+		<!-- BEGIN FOOTER -->
+		
+		<footer class="footer">
+			<div class="container-fluid">
+				<div class="row align-items-center justify-content-around">
+					<div class="col-md-9">
+						<ul class="footer_list">
+							<li class="footer_list-item"><a href="/no-page.html">Политиика конфиденциальности</a></li>
+							<li class="footer_list-item"><a href="no-page.html">Пользовательское соглашение</a></li>
+							<li class="footer_list-item"><a href="no-page.html">Обработка данных</a></li>
+							<li class="footer_list-item"><a href="about.html">О журнале</a></li>
+							<li class="footer_list-item"><a href="contacts.html">Контакты</a></li>
+							<li class="footer_list-item"><a href="gui.html">ui-kit</a></li>
+						</ul>
+					</div>
+					<div class="col-12 col-md">
+						<p class="footer_copyright">© 2019 Все права защищены.</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+		<!-- END FOOTER -->
+		<script src="./js/main.js" defer></script>
+	</body>
+</html>
