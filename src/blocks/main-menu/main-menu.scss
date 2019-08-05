@@ -9,13 +9,13 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background: $bleu;
+        background: $bleuBlack;
     }
 
     &_item {
         position: relative; 
         width: auto;
-        text-align: center;
+        text-align: left;
         flex: 1 0 auto;
         max-width: 100%;
 
@@ -44,10 +44,11 @@
         color: $white;
         text-transform: uppercase;
         border-bottom: 0;
-        padding: 15px 0;
+        padding: 15px 15px;
+        transition: all .5s;
 
         @media(min-width: map-get($grid-breakpoints, lg)) {
-            padding: 33px 0;
+            padding: 24px 0;
         }
 
         &:before {
@@ -69,11 +70,16 @@
                 font-family: "Font Awesome 5 Free";
             }
         }
+
+        &:hover {
+            color: $mainColor-25;
+            transition: all .5s ease-out;
+        }
     }
     &_sub {
         visibility: hidden;
         opacity: 0;
-        background-color: $bleu;
+        background-color: $bleuBlack;
         list-style-type: none;
 
         @media(max-width: map-get($grid-breakpoints, lg)) {
@@ -81,18 +87,19 @@
             max-height: 0;
             transition: visibility 0.5s ease-out, opacity 0.5s ease-out, max-height 0.5s ease-out;
             background-color: rgba($white, .1);
+            color: $mainColor-25;
         }
         @media(min-width: map-get($grid-breakpoints, lg)) {
             position: absolute;
             z-index: 20;
             left: 50%;
-            top: 100%;
+            top: 80%;
             width: 150px;
             padding-top: 10px;
             padding-bottom: 10px;
             margin-top: 5px;
             border-radius: 5px;
-            box-shadow: 0 0 30px rgba(0,0,0,.2);
+            box-shadow: 0 7px 30px 0 rgba(0, 0, 0, 0.49);
             box-sizing: border-box;
             transform: translate(-50%, 20px);
             transition: .3s;
@@ -128,7 +135,7 @@
             a {
                 padding: 10px 20px;
                 &:hover {
-                    background-color: darken($bleu, 2%);
+                    background-color: darken($bleuBlack, 2%);
                 }
             }
         }

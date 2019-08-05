@@ -1,0 +1,219 @@
+.header-top {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 31px;
+    width: 100%;
+    height: 170px;
+    background: $white;
+
+    &__star-cont {
+        position: absolute;
+        width: 86px;
+        margin-right: 20px;
+        bottom: -20px;
+        left: 0;
+    }
+
+    &__logo {
+        width: 86px;
+        height: 130px;
+        margin-top: 20px;
+        margin-bottom: 31px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__star {
+        width: 12px;
+        height: 12px;
+        object-fit: contain;
+    }
+
+    &__title-block {
+        border-top: 1px solid $lightGray;
+        border-bottom: 1px solid $lightGray;
+        margin-left: 0px;
+        padding: 5px 0px;
+    }
+
+    &__title-main {
+        display: block;
+        font-family: $font-stack;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.75;
+        letter-spacing: normal;
+        color: #1f2d69;
+        text-transform: uppercase;
+    }
+
+    &__title-younger {
+        font-family: $font-stack;
+        font-size: 13px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.69;
+        letter-spacing: -0.5px;
+        color: $mainGray;
+    }
+
+    &__cup-cont {
+        position: relative;
+        display: inline-block;
+            &__number {
+            position: absolute;
+            bottom: -5px;
+            left: 39%;
+            display: block;
+            width: 8px;
+            height: 8px;
+            padding: 8px;
+            margin: auto;
+            color: $white;
+            box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.08);
+            background: $accentColor;
+            border-radius: 100px;
+            border: 2px solid $white;
+                & span {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: inline-block;
+                text-align: center;
+                width: 100%;
+                height: 100%;
+                padding: 1px 0px;
+                margin: 0 auto;
+                font-size: 12px;
+                }
+            }
+    }
+
+    &__cup {
+        margin-left: 20px;
+    }
+
+    &__cup img {
+        width: 62px;
+        height: 75px;
+        object-fit: contain;
+        margin: 0px 12px;
+    }
+
+    &__social {
+        width: 100%;
+        display: block;
+        float: right;
+        text-align: right;
+    }
+}
+
+@media (min-width: 992px) {
+    .header-top {
+        &__title-block {
+            margin-left: 40px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .header-top {
+    &__cup {
+        display: none;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .header-top {
+        &__social {
+            width: 100%;
+            padding: 10px 0px;
+        }
+        &__title-block {
+            border-top: none;
+            border-bottom: 1px solid $lightGray;
+            margin-left: 0px;
+            padding: 5px 0px;
+        }
+
+        &__title-main {
+            display: inline-block;
+            font-size: 10px;
+        }
+
+        &__title-younger {
+            display: inline-block;
+            font-size: 11px;
+        }
+
+        &__logo {
+            width: 41px;
+            height: 62px;
+            margin-top: 8px;
+            margin-bottom: 23px;
+            margin-left: 10px;
+        }
+
+        &__star-cont {
+            bottom: -17px;
+        }
+
+        &__star {
+            width: 8px;
+            height: 8px;
+        }
+    }
+}
+
+.star-cont {
+    position: relative;
+}
+
+/* Tooltip */
+.tooltip {
+    position: absolute;
+    z-index: 2;
+    min-width: 200px;
+    min-height: 44px;
+    line-height: 44px;
+    background: $grayBlack;
+    color: #30333A;
+    top: 0;
+    left: 0px;
+    font-family: $font-stack;
+    font-size: 11px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.18;
+    letter-spacing: normal;
+    text-align: left;
+    color: $white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.tooltip.right_tooltip{
+  left: 70px;
+}
+
+.right_tooltip:before{
+  content: "";
+  position: absolute;
+  top: 35%;
+  left: -20px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid $grayBlack;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+.header-top__cup-cont:hover .tooltip{
+  opacity: 1;
+}

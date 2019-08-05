@@ -1,17 +1,56 @@
-/* --- Global font --- */
+/* -----------------------
 
-$font-stack: 'Ubuntu', sans-serif;
+	Global fonts 
 
-/* --- Global color --- */
+----------------------- */
 
-/* neutral color*/
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,700&display=swap');
 
-$gray-black: #212121;
-$gray: #5F6266;
-$gray-1: #888A8D;
-$light-gray: #CECECE;
-$light-gray-1: #F7F5F9;
-$white: #FFFFFF;
+/* font-family: 'Fira Sans', sans-serif; */
+
+$font-stack: 'Fira Sans', sans-serif;
+
+/* ----------------------- 
+
+	Global colors 
+
+----------------------- */
+
+/* --- neutral color ---*/
+
+$grayBlack: #050d30;
+$bleuBlack: #1f2d69;
+$mainGray: #bfb8c5;
+$lightGray: #ece9f1;
+$lightGray1: #ece9f1;
+$white: #ffffff;
+
+
+$gray-black: #050d30;
+$gray: #1f2d69;
+$gray-1: #bfb8c5;
+$light-gray: #ece9f1;
+$light-gray-1: #f7f5f9;
+
+
+
+
+/* --- main-color --- */
+
+$mainColor: #3fafec;
+$mainColor-75: #84d4ff;
+$mainColor-25: #bee8ff;
+
+/* accent-color */
+
+$accentColor: #ee9d49;
+$accentColor-75: #f8be81;
+$accentColor-25: #ffe1c2;
+
+
+
+
+/* ниже удалить
 
 /* bleu */
 
@@ -49,7 +88,10 @@ $light-pink: #EE8FFA;
 $light-pink-75: #F7BAFF;
 $light-pink-25: #FBDBFF;
 
-/* semantic color */
+
+
+
+/* --- semantic color --- */
 
 $yellow-semantic: #FFCF5C;
 $yellow-semantic-75: #FFE29D;
@@ -263,9 +305,13 @@ $red-semantic-25: #FBE4E8;
 	color: $green;
 }
 
-/* Typografica */
+/* ----------------------- 
 
-/* main */
+	Typografica 
+
+----------------------- */
+
+/* --- main --- */
 
 h1, h2, h3, h4, h5, h6, ul {
 	padding: 0;
@@ -274,10 +320,15 @@ h1, h2, h3, h4, h5, h6, ul {
 
 h1, .h1 {	
 	font-family: $font-stack;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 40px;
-	line-height: 46px;
+	font-size: 48px;
+  	font-weight: bold;
+  	font-style: normal;
+  	font-stretch: normal;
+  	line-height: 1.29;
+  	letter-spacing: normal;
+	color: $grayBlack;
+
+	margin-bottom: 30px;
 }
 
 @media (max-width: 768px) {
@@ -294,29 +345,57 @@ h1, .h1 {
 
 h2, .h2 {
 	font-family: $font-stack;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 34px;
-	line-height: 28px;
-	color: $gray-black;
+	font-size: 40px;
+  	font-weight: bold;
+  	font-style: normal;
+  	font-stretch: normal;
+  	line-height: 1.2;
+  	letter-spacing: normal;
+	color: $grayBlack;
 }
 
 h3, .h3 {
 	font-family: $font-stack;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 17px;
-	line-height: 22px;
-	color: $gray-black;
+	font-size: 33px;
+  	font-weight: bold;
+  	font-style: normal;
+  	font-stretch: normal;
+  	line-height: 1.7;
+  	letter-spacing: normal;
+	color: $grayBlack;
 }
 
 h4, .h4 {
 	font-family: $font-stack;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 15px;
-	line-height: 20px;
-	color: $gray-black;
+	font-size: 27px;
+  	font-weight: bold;
+  	font-style: normal;
+  	font-stretch: normal;
+  	line-height: 1.7;
+  	letter-spacing: normal;
+	color: $grayBlack;
+}
+
+h5, .h5 {
+	font-family: $font-stack;
+	font-size: 23px;
+  	font-weight: bold;
+  	font-style: normal;
+  	font-stretch: normal;
+  	line-height: 1.7;
+  	letter-spacing: normal;
+	color: $grayBlack;
+}
+
+h6, .h6 {
+	font-family: $font-stack;
+	font-size: 17px;
+  	font-weight: bold;
+  	font-style: normal;
+  	font-stretch: normal;
+  	line-height: 1.29;
+  	letter-spacing: normal;
+	color: $grayBlack;
 }
 
 .subtitle {
@@ -414,27 +493,7 @@ p, .p {
 	color: #1a051d;
 }
 
-/* other typografica */
-
-.section-paragrafe {
-	margin-bottom: 30px;
-}
-
-@media (max-width: 768px) {
-	.section-paragrafe {
-		margin-bottom: 15px;
-	}
-}
-
-.title-page {
-	margin-bottom: 30px;
-}
-
-@media (max-width: 768px) {
-	.title-page {
-		margin-bottom: 0px;
-	}
-}
+/* --- other typografica --- */
 
 .text-left {
 	text-align: left;
@@ -448,17 +507,15 @@ p, .p {
 	text-align: center;
 }
 
-.p-cont {
-	width: 80%;
+.bold-text {
+	font-weight: bold;
 }
 
-@media (max-width: 991px) {
-	.p-cont {
-		width: 100%;
-	}
-}
+/* -----------------------
 
-/* Main style */
+	Main style
+
+----------------------- */
 
 body {
 	font-family: $font-stack;
@@ -472,26 +529,6 @@ body {
 	justify-content: center;*/
 }
 
-.section-block {
-	margin: 30px 0px;
-}
-
-@media (max-width: 991px) {
-	.section-block {
-		margin: 21px 0px 10px 0px;
-	}
-}
-
-.main-mini {
-	margin: 0 auto;
-	width: 980px;
-}
-
-.link {
-	text-decoration: none;
-	cursor: pointer;
-}
-
 img {
 	width: 100%;
 }
@@ -500,6 +537,16 @@ img {
 	max-width: 500px;
 	width: 100%;
 	height: auto;
+}
+
+section {
+	margin: 20px 0px;
+}
+
+@media (max-width: 480px) {
+	section {
+	    margin: 0px 0px;
+	}
 }
 
 time {
@@ -536,63 +583,6 @@ hr {
     margin: 30px 0px;
     clear: both;
 }
-
-.hr-title {
-	padding-bottom: 9px;
-    border-bottom: 1px solid $light-gray;
-}
-
-.main {
-	height: 100%;
-}
-
-.text-col-2 {
-	margin-bottom: 20px;
-	vertical-align: top;
-	width: 100%;
-	column-count: 2;
-	column-gap: 40px;
-}
-
-@media (max-width: 1200px) {
-	.text-col-2 {
-	column-count: 1;
-	}
-}
-
-.text-col-2 p {
-	margin: 0px;
-}
-
-.no-padding {
-	padding: 0;
-}
-
-.no-margin {
-	margin: 0;
-	margin-top: 0;
-}
-
-.padding-left {
-	padding-left: 70px;
-}
-
-@media (max-width: 1200px) {
-	.padding-left {
-	padding-left: 0px;
-	}
-}
-
-.margin-bottom {
-	margin-bottom: 30px;
-}
-
-@media (max-width: 1200px) {
-	.margin-bottom {
-		margin-bottom: 20px;
-	}
-}
-
 /* Other elements */
 
 .applicationButton {

@@ -1,31 +1,29 @@
 <!-- BEGIN HEADER -->
 
-<header class="header">
-	<!-- шапка -->
-  	<div class="container">
-		<div class="row align-items-center">
-	  		<div class="col-5 col-md-3 col-lg-2">
-	  			<a href="index.html">
-	  				<img src="../img/logo/LogoType.svg" alt="logo" class="header_logo">
-	  			</a>
-	  		</div>
-	  		<div class="col-1 col-lg-9">
-	  			//= ../main-menu/main-menu.html
+<header>
+	//= ../header-top/header-top.html
+	<div class="header">
+		<!-- 2 уровень, навигация -->
+	  	<div class="container">
+			<div class="row align-items-center">
+		  		<div class="col-1 col-lg-9">
+		  			//= ../main-menu/main-menu.html
+				</div>
+		  		<div class="col text-right">
+					//= ../button-hamburger/button-hamburger.html
+					<button type="button" class='header_search' data-header="search">
+						<img src="../img/icons/Search.svg" alt="search" width="13px" height="13px">
+					</button>
+		  		</div>
 			</div>
-	  		<div class="col text-right">
-				//= ../button-hamburger/button-hamburger.html
-				<button type="button" class='header_search' data-header="search">
-					<img src="../img/icons/Search.svg" alt="search" width="16px" height="16px">
-				</button>
-	  		</div>
-		</div>
-		<!-- выдвижной поиск меню-->
-		<div class="header_search-form">
-			<form action="#" method="post">
-				<input type="search" placeholder="Найти">
-			</form>
-		</div>
-  	</div>
+			<!-- выдвижной поиск меню-->
+			<div class="header_search-form">
+				<form action="#" method="post">
+					<input type="search" placeholder="Найти">
+				</form>
+			</div>
+	  	</div>
+	</div>
 </header>
 
 <!-- END HEADER -->

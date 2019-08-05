@@ -3,19 +3,12 @@
 .header {
     padding: 10px 0px;
     width: 100%;
-    background: $bleu;
+    background: $bleuBlack;
 
     .button-hamburger {
         @media(min-width: map-get($grid-breakpoints, lg)) {
             display: none;
         }
-    }
-    
-    &_logo {
-        width: 124px;
-        height: 23px;
-        display: flex;
-        align-items: center;
     }
 
     &_search {
@@ -38,6 +31,7 @@
             font-size: inherit;
             height: 36px;
             border: none;
+            border-radius: 30px;
             box-shadow: 0 3px 8px 1px rgba(0, 0, 0, 0.2);
             padding: 0 15px;
 
